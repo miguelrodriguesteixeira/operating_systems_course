@@ -1,0 +1,20 @@
+operations.o: fs/operations.c fs/operations.h fs/config.h fs/state.h \
+ utils/betterassert.h utils/logging.h
+state.o: fs/state.c fs/state.h fs/config.h fs/operations.h \
+ utils/betterassert.h utils/logging.h
+manager.o: manager/manager.c utils/logging.h utils/registerclient.h \
+ utils/logging.h fs/operations.h fs/config.h fs/state.h fs/operations.h
+mbroker.o: mbroker/mbroker.c mbroker/mbroker.h utils/logging.h \
+ fs/operations.h fs/config.h fs/state.h fs/operations.h \
+ utils/switchcase.h utils/logging.h
+producer-consumer.o: producer-consumer/producer-consumer.c \
+ producer-consumer/producer-consumer.h
+pub.o: publisher/pub.c utils/logging.h utils/registerclient.h \
+ utils/logging.h fs/operations.h fs/config.h fs/state.h fs/operations.h
+sub.o: subscriber/sub.c utils/logging.h utils/registerclient.h \
+ utils/logging.h fs/operations.h fs/config.h fs/state.h fs/operations.h
+logging.o: utils/logging.c utils/logging.h
+registerclient.o: utils/registerclient.c utils/registerclient.h \
+ utils/logging.h fs/operations.h fs/config.h fs/state.h fs/operations.h
+switchcase.o: utils/switchcase.c utils/switchcase.h utils/logging.h \
+ fs/operations.h fs/config.h fs/state.h fs/operations.h
