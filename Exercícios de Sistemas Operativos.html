@@ -1,0 +1,1930 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exercícios de Sistemas Operativos</title>
+<link rel="stylesheet" href="./Exercícios de Sistemas Operativos_files/base.css">
+<script src="./Exercícios de Sistemas Operativos_files/MathJax.js" id=""></script>
+<style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 5px 0px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -khtml-border-radius: 5px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 1px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: .7em}
+.MathJax_MenuRadioCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuLabel {padding: 1px 2em 3px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #DDDDDD; margin: 4px 3px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: #606872; color: white}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style></head>
+<body><div id="MathJax_Message" style="display: none;"></div><div class="container"><h1 id="exercícios-de-sistemas-operativos">Exercícios de Sistemas Operativos</h1>
+
+<p>Abaixo apresentamos propostas de resolução para uma seleção de perguntas do livro e de testes de anos anteriores.</p>
+
+<ul>
+<li><a href="http://disciplinas.tecnico.ulisboa.pt/~leic-so.daemon/testes-exames/coletanea/#cap3">Capítulo 3 - Processos: Modelo Computacional</a></li>
+<li><a href="http://disciplinas.tecnico.ulisboa.pt/~leic-so.daemon/testes-exames/coletanea/#cap4">Capítulo 4 - Gestor de Processos</a></li>
+<li><a href="http://disciplinas.tecnico.ulisboa.pt/~leic-so.daemon/testes-exames/coletanea/#cap5">Capítulo 5 - Sincronização: Secções Críticas</a></li>
+<li><a href="http://disciplinas.tecnico.ulisboa.pt/~leic-so.daemon/testes-exames/coletanea/#cap6">Capítulo 6 - Programação Concorrente [com memória partilhada]</a></li>
+<li><a href="http://disciplinas.tecnico.ulisboa.pt/~leic-so.daemon/testes-exames/coletanea/#cap7">Capítulo 7 - Mecanismos de Gestão de Memória</a></li>
+<li><a href="http://disciplinas.tecnico.ulisboa.pt/~leic-so.daemon/testes-exames/coletanea/#cap8">Capítulo 8 - Algoritmos de Gestão de Memória</a></li>
+<li><a href="http://disciplinas.tecnico.ulisboa.pt/~leic-so.daemon/testes-exames/coletanea/#cap9">Capítulo 9 - Sistemas de Ficheiros</a></li>
+<li><a href="http://disciplinas.tecnico.ulisboa.pt/~leic-so.daemon/testes-exames/coletanea/#cap10">Capítulo 10 - Comunicação Entre Processos</a></li>
+<li><a href="http://disciplinas.tecnico.ulisboa.pt/~leic-so.daemon/testes-exames/coletanea/#mp">Extra livro: Programação concorrente por troca de mensagens</a></li>
+</ul>
+<a name="cap3"></a>
+
+<h2 id="capítulo-3-processos-modelo-computacional">Capítulo 3 - Processos: Modelo Computacional</h2>
+
+    <p><strong>Ex. 1  Considere o seguinte pseudo-código de um programa multitarefa com <em>pthreads</em>
+	(por simplicidade, omitem-se verificações de erros):
+	
+	</strong></p><pre><strong><code>
+	    T1.1.  int main(int argc, char **argv) {
+	    T1.2.    pthread_t tid;
+	    T1.3.    pthread_create(&amp;tid, NULL, t2_start_routine, NULL);
+	    T1.4.    printf(“A\n”);
+	    T1.5.    pthread_join(tid, NULL);
+	    T1.6.    printf(“B\n”);
+	    T1.7.    return 0;
+	    T1.8.  }
+	
+	    T2.1.  void *t2_start_routine(void *arg) {
+	    T2.2.   printf(“C\n”);}
+	    T2.3.   sleep(10); /* 10 segundos */
+	    T2.4.   return NULL;
+	    T2.5. }</code></strong></pre><strong>
+	
+	
+	a) Que saídas são possíveis observar quando executamos este programa? Justifique. Assuma apenas execuções em que nenhuma das funções chamadas devolvem erro.</strong><p></p>
+
+    <p><em>Tanto pode acontecer "A\nC\nB\n" como "C\nA\nB\n". A partir
+    da linha em que a nova tarefa é criada, ambas as tarefas
+    executam-se concorrentemente, logo não há garantia de ordem entre
+    as execuções de cada uma, o que explica porque os printf das
+    linhas T1.4 e T2.2 podem acontecer em qualquer ordem. Na linha
+    T1.5, a tarefa original espera até a segunda tarefa terminar
+    (linha T2.4), logo o printf da linha T1.6 acontecerá necessariamente depois dos outros printf (assumindo execução sem falhas).</em></p>
+
+    <p><strong>
+	b) Ao longo da execução do programa existirão diferentes conjuntos de tarefas em execução. Indique como evolui o conjunto de tarefas, relacionando com as linhas do programa acima.</strong></p>
+
+    <p><em>
+	Uma tarefa até à linha T1.3, duas tarefas até à linha T2.4, uma tarefa a partir desse momento (assumindo execução sem falhas).
+      </em></p>
+	
+    <p><strong>c) Caso a tarefa t2 queira devolver uma cadeia de caracteres (char*) à tarefa original para esta a imprimir com printf, como deveria o programa ser alterado?</strong></p>
+
+    <p><em>Na função <em>t2_start_routine</em>:
+	</em></p><pre><em><code>
+	    char *s = ...;
+	    ...
+	    T2.4.   return s;
+	</code></em></pre><em>
+	Na função <em>main</em>:
+	<pre><code>
+	    char *s;
+	    T1.5.    pthread_join(tid, &amp;s);
+	    T1.6.    printf("%s", s);
+	</code></pre>
+	</em><p></p>
+
+
+<p><strong>Ex. 2 - Considere um dado programa, com vários fios de execução, que tem 3 versões que se executam num computador uniprocessador com sistema operativo do tipo Unix e cuja funcionalidade não implica nenhuma operação de I/O:</strong></p>
+
+<ul>
+<li><strong>versão V1 em que cada fio de execução é suportado por um processo,</strong></li>
+<li><strong>versão V2 em que cada fio de execução é suportado por uma tarefa real, e</strong></li>
+<li><strong>versão V3 em que cada fio de execução é suportado por uma pseudo-tarefa.</strong></li>
+</ul>
+
+<p><strong>Note que as 3 versões têm exatamente a mesma funcionalidade.</strong></p>
+
+<p><strong>a) Como compara as versões V1 e V2 no que respeita à robustez do programa? Na sua resposta considere, por exemplo, que um dos fios de execução faz uma divisão por zero.</strong></p>
+
+<p><em>A versão V1 é mais robusta, uma vez que apenas o processo onde ocorre o erro é terminado, continuando as restantes tarefas a executar-se. Na versão V2 o processo (que inclui todas as tarefas) é terminado. No caso de uma divisão por zero, em V1, apenas o fio de execução associado ao processo onde ocorre a divisão por zero termina (e todos os outros fios de execução continuam a sua execução normal) enquanto que em V2, todos  os fios de execução são terminados.</em></p>
+
+<p><strong>b) Como compara as versões V1 e V3 no que respeita à robustez do programa? Na sua resposta considere, por exemplo, que um dos fios de execução faz uma divisão por zero.</strong></p>
+
+<p><em>Resposta idêntica à anterior.</em></p>
+
+<p><strong>c) Como compara as versões V1 e V2 no que respeita à rapidez de execução do programa?</strong></p>
+
+<p><em>V1 será mais lento, pois a criação de processos e comutação entre processos é mais lenta que a criação/comutação entre tarefas, dado que os processos não partilham o mesmo contexto.</em></p>
+
+<p><strong>d) Como compara as versões V1 e V3 no que respeita à rapidez de execução do programa?</strong></p>
+
+<p><em>Resposta idêntica à anterior.</em></p>
+
+<p><strong>e)</strong> Considere agora que o programa é executado numa máquina com dois processadores. Compare o desempenho das versões V2 e V3.</p>
+
+<p><em>A versão V2 será mais rápida pois diferentes tarefas poderão executar-se concorrentemente nos dois processadores. Na versão V3, todas as pseudotarefas irão partilhar um único processador.</em></p>
+
+<p><strong>Sugestão: Rever Secção 3.4.2 – Modelo Multitarefa</strong></p>
+
+<hr>
+
+<p><strong>Ex. 3 Considere um sistema operativo do tipo Unix no qual um processo executa o seguinte programa que se encontra num ficheiro “t.c”; “t.c”  é compilado gerando um ficheiro executável “t.exe”. Por simplicidade, omitem-se verificações de erros.</strong></p>
+
+<pre><code>1.  #include &lt;stdio.h&gt;
+2.  #include &lt;stdlib.h&gt;
+3.  main() {
+4.      int pid, pid_filho, status;
+5.      printf ("\nantes do fork pid=%d\n", getpid());
+6.      pid = fork();
+7.      if (pid == 0) {
+8.          printf ("pai=%d e filho=%d\n", getppid(), getpid());
+9.          execv ("t.exe",NULL);
+10.     }
+11.     else if (pid != -1){
+12.         pid_filho = wait(&amp;status);
+13.         printf ("depois do wait feito pelo pid=%d obtendo pid_filho=%d\n", getpid(), pid_filho);
+14.         exit (0);
+15.     }
+16.     else {
+17.         printf ("erro no fork\n");
+18.         exit (-1);
+19.     }
+20. }
+</code></pre>
+
+<p><strong>a) Quantos processos são criados?</strong></p>
+
+<p><em>Serão criados continuamente processos, de forma recursiva, até que se esgotem os recursos da máquina ou que os limites de utilização de recursos pelo utilizador sejam atingidos.</em></p>
+
+<p><strong>b) Assuma que o fork nunca retorna erro. A instrução depois do “wait” é executada?</strong></p>
+
+<p><em>Assumindo uma máquina e utilizador com recursos infinitos (logo o programa acima é capaz de criar um número infinito de processos filho), nenhum processo filho chega a terminar (assumindo também que a chamada “exec” nunca falha). Consequentemente, a função “wait” nunca retornará, logo alinha seguinte nunca será executada.</em></p>
+
+<p><strong>c) Assuma que o fork retorna erro na 3ª vez que é chamado. Considere que inicia a execução do programa “t.exe”. Indique o seu output continuando o que se indica (antes do fork pid=2204).</strong></p>
+
+<em></em><p><em>antes do fork pid=2204<br>
+    pai=2204 e filho=2205 <br>
+    antes do fork pid=2205<br>
+    pai=2205 e filho=2206<br>
+    antes do fork pid=2206
+    erro no fork<br>
+    depois do wait feito pelo pid=2205 e obtendo pid_filho=2206<br>
+    depois do wait feito pelo pid=2204 e obtendo pid_filho=2205</em> <br>
+<em>Os valores dos pids do processos apresentados podem ser outros pois isso depende do SO; no entanto, note que os valores em causa devem ser coerentes com a hierarquia dos processo em causa.</em> </p>
+
+<p><strong>Sugestão: Rever Secção 3.5.2 - Operações sobre Processos</strong></p>
+
+<hr>
+
+<p><strong>Ex. 4 É possível implementar o conceito de pseudoparalelismo sem recorrer ao núcleo do sistema operativo? Justifique.</strong></p>
+
+<p><em>Sim, é possível implementar o conceito de pseudoparalelismo através da utilização de co-rotinas ou pseudotarefas. A gestão das pseudotarefas é feita explicitamente pelo programador usando bibliotecas que se executam no espaço do utilizador, i.e., sem recorrer ao núcleo do sistema operativo. Em particular, a comutação de tarefas poderá ser feita: i) explicitamente, o que implica que o programador invoque a função de comutação de tarefa “yield”, ou ii) implicitamente através da utilização do mecanismo de exceções com base num intervalo de tempo que, quando expira, gera um signal que é tratado por uma rotina que efetuará a comutação de tarefas.</em></p>
+
+<p><strong>Sugestão: Rever Secção 3.4.2.2 - Conceito de tarefa</strong></p>
+
+<hr>
+
+<p><strong>Ex. 5 Considere o seguinte excerto de um programa Unix (por simplicidade, omitem-se verificações de erros):</strong></p>
+
+<pre><code>1.  int a; /* variável global */
+2.  main() {
+3.      a = 0;
+4.      if (fork() == 0) {
+5.          a++;
+6.          printf(“%d”, a);
+7.          exit(0);
+8.      }
+9.      else {
+10.         pid = wait(&amp;estado);
+11.     }
+12.     printf(“%d”, a);
+13. }
+</code></pre>
+
+<p><strong>a) Qual a saída deste programa? Justifique.</strong></p>
+
+<p><em>Saída: ‘10’. O primeiro algarismo (‘1’) é impresso após a criação do processo filho e depois do incremento unitário à variável ‘a’, que depois é impressa (linha 6). O segundo algarismo (‘0’) é impresso pelo processo pai depois do processo filho terminar (linha 12). É de notar que os processos não partilham o mesmo espaço de endereçamento, razão pela qual a variável ‘a’ possui valores distintos nos dois processos.</em></p>
+
+<p><strong>b) Modifique-o de modo a obter outra sequência. Por simplicidade, omita verificações de erros. Justifique.</strong></p>
+
+<p><em>Várias respostas possíveis. Possível resposta:</em></p>
+
+<pre><code>1.  int a; /* variável global */
+2.  main() {
+3.      a = 0;
+4.      if (fork() == 0) {
+5.          a++;
+6.          printf(“%d”, a);
+7.          /* exit(0); */
+8.      }
+9.      else {
+10.         pid = wait(&amp;estado);
+11.     }
+12.     printf(“%d”, a);
+13. }
+</code></pre>
+
+<p><em>Saída: ‘110’. Os primeiros dois ‘1’s são impressos pelo filho (linhas 6 e 12). O ‘0’ é impresso pelo pai (linha 12). O valor da variável ‘a’ no processo pais é zero pois apenas o filho incrementa a variável (linha 5). Uma vez que os processos não partilham o mesmo espaço de endereçamento, um incremento de uma variável no filho não tem qualquer efeito no processo do pai.</em></p>
+
+<p><strong>Sugestão: Rever Secção 3.5.2 - Operações sobre Processos</strong></p>
+
+<hr>
+
+<p><strong>Ex. 6 Para cada uma das seguintes afirmações, indique se esta pode ou não ser um motivo válido para a utilização de múltiplas tarefas reais (tarefas-núcleo) num programa que corre num sistema operativo Unix, e explique porquê:</strong></p>
+
+<p><strong>a) Ter múltiplos fios de execução com espaços de endereçamento separados no mesmo programa.</strong></p>
+
+<p><em>Não; ao utilizar tarefas reais, o espaço de endereçamento é comum a todas as tarefas do mesmo processo.</em></p>
+
+<p><strong>b) Poder sobrepor a execução de instruções de E/S com a utilização do CPU por outras partes do mesmo programa.</strong></p>
+
+<p><em>Sim, ao utilizar tarefas reais, enquanto uma ou mais tarefas podem estar a tratar eventos de E/S, outras poderão estar a utilizar CPU.</em></p>
+
+<p><strong>c) Executar dois programas diferentes (correspondentes a diferentes ficheiros executáveis) em paralelo.</strong></p>
+
+<p><em>Não; tarefas reais não são necessárias para atingir paralelismo entre dois processos diferentes. As tarefas reais podem apenas trazer paralelismo dentro do mesmo processo (i.e., vários fios de execução em paralelo).</em></p>
+
+<p><strong>Sugestão: Rever Secção 3.4 – Modelos de Programação de Processos</strong></p>
+
+<hr>
+
+<p><strong>Ex. 7 Considere o seguinte excerto de um programa que usa signals em Unix (por simplicidade, omitem-se verificações de erros):</strong></p>
+
+<pre><code>1.  void trata_signal(int num) {
+2.      signal(SIGINT, trata_signal);
+3.      printf(“Operação negada.”);
+4.  }
+5.
+6.  int main(void) {
+7.      if (signal(SIGINT, trata_signal) == SIG_ERR)
+8.          {printf(“Erro no signal”);}
+9.      for (;;) {sleep(10);}
+10.     exit(0);
+11.}
+</code></pre>
+
+<p><strong>a) Explique o comportamento deste programa.</strong></p>
+
+<p><em>O programa começa por instalar uma rotina de tratamento para o sinal ‘SIGINT’ usando a chamada de sistema “signal” e fazendo o teste devido para verificar o retorno da chamada de sistema. De seguida, o programa entra num ciclo ”for” sem fim onde, a cada iteração, o programa suspende a sua execução durante 10 segundos (utilizando a chamada de sistema “sleep”). A rotina de tratamento do sinal “SIGINT”, se chamada, re-instala o sinal e imprime uma mensagem para a output. É de notar que o sinal “SIGINT” pode ser gerado através da combinação das teclas CTRL+C.</em></p>
+
+<p><strong>b) Identifique todas as funções do sistema operativo e da biblioteca stdio que são utilizadas no programa e explique o que faz cada uma.</strong></p>
+
+<p><em>“printf” – imprime carateres para o output do processo;</em> <br>
+<em>“signal” – instala rotinas de tratamento de sinais;</em> <br>
+<em>“sleep” – suspende a execução da tarefa atual durante um período de tempo;</em> <br>
+<em>“exit” – termina a execução do processo.</em></p>
+
+<p><strong>c) De que forma um processo que corra este programa pode ser terminado? Justifique.</strong></p>
+
+<p><em>O processo pode ser terminado enviando um sinal cujo efeito sobre o processo é terminá-lo. Por exemplo, é possível utilizar a chamada de sistema “kill” com o sinal “SIGTERM” para terminar este processo.</em></p>
+
+<p><strong>Sugestão: Rever Secção 3.5.3 - Signals</strong></p>
+
+<hr>
+
+<p><strong>Ex. 8 Considere a chamada de sistema “kill” em Unix.</strong></p>
+
+<p><strong>a) Explique o que faz esta função.</strong></p>
+
+<p><em>A chamada de sistema “kill” tem como propósito o envio de sinais a processos.</em></p>
+
+<p><strong>b) Esta função necessita de efetuar algumas validações de segurança. Explique quais e qual o motivo da sua existência.</strong></p>
+
+<p><em>Uma vez que a chamada de sistema “kill” pode interferir com outros processos,  é importante garantir que, por exemplo, um utilizador sem privilégios de superutilizador não consiga interferir com processos do sistema (que estão associados ao superutilizador do sistema) ou com processos de outros utilizadores. Desta forma, usando a função de sistema “kill”, apenas é possível enviar sinais a processos do mesmo UID. Apenas processos com privilégios de superutilizador podem ultrCapassar esta proteção.</em></p>
+
+<p><strong>c) O nome desta primitiva é enganador. Explique porquê.</strong></p>
+
+<p><em>É enganador pois a função não mata o processo, apenas envia sinais. A possível motivação para o nome resulta da implementação por omissão do tratamento da maioria dos sinais, que resulta no término do processo.</em></p>
+
+<p><strong>Sugestão: Rever Secção 3.5.3.4 - Operações Associadas aos Signals</strong></p>
+
+<hr>
+
+<p><strong>Ex. 9 Considere o seguinte código multitarefa (por simplicidade, omitem-se verificações de erros):</strong></p>
+
+<pre><code>1.  int i;
+2.  int main(int argc, char **argv) {
+3.      if (thread_create(t2_start_routine, (void*)0) == NULL) {exit(1);}
+4.      thread_yield(); /* comutação de tarefa */
+5.      for (i = 0; i &lt; MAX; i++) {printf(“t1\n”);}
+6.      return 0;
+7.  }
+8.  void *t2_start_routine(void *arg) {
+9.      for (i = 0; i&lt; MAX; i++) {printf(“t2\n”);}
+10.     sleep(10); /* 10 segundos */
+11.     return 0;
+12. }
+</code></pre>
+
+<p>Suponha que as rotinas “thread_create” e “thread_yield” são implementadas por uma biblioteca de co-rotinas (pseudotarefas).</p>
+
+<p><strong>a) Qual é a saída deste programa? Justifique.</strong></p>
+
+<p><em>Saída: ‘MAX’ linhas com ‘t2’ seguidas de ‘MAX’ linhas com ‘t1’. Uma vez que este código usa pseudotarefas, cada tarefa vai executar-se (de acordo com o código apresentado) até que a outra chame a função “thread_yield” ou termine. Assim sendo,  a thread que executa a rotina ‘t2_start_routine’ vai executar-se até terminar (daí as linhas com ‘t2’ serem impressas todas seguidas). A outra thread (que invocou a função “thread_yield”) apenas imprime linhas com ‘t1’ após a outra thread terminar.</em></p>
+
+<p><strong>b) A resposta à alínea anterior manter-se-ia se mudasse para tarefas reais? Justifique.</strong></p>
+
+<p><em>Não. Com tarefas reais, é possível que as linhas escritas por cada tarefa ficassem alternadas uma vez que é o núcleo do sistema operativo a decidir que tarefa corre em cada instante. Deste modo, como já não é o programador a decidir o escalonamento, ambas as tarefas vão executar-se concorrentemente.</em></p>
+
+<p><strong>c) Considerando ainda o código apresentado acima, consegue determinar o tempo mínimo que decorre entre a saída das diferentes tarefas? Qual é esse tempo mínimo? Justifique.</strong></p>
+
+<p><em>10 segundos é o tempo mínimo pois a tarefa que executa a função ‘t2_start_routine’ executa um “sleep” antes de terminar. É de notar que a tarefa ‘t2’ está a executar-se porque a tarefa ‘t1’ invocou a função “thread_yield”, que retira ‘t1’ de execução até que tarefa ‘t2’ termine.</em></p>
+
+<p><strong>d) A resposta à alínea anterior manter-se-ia se mudasse para tarefas reais? Justifique.</strong></p>
+
+<p><em>Não, com tarefas reais, a saída de ambas as tarefas pode sair alternada pois a chamada a “thread_yield” apenas faz com que a thread perca o tempo de CPU que lhe foi atribuído no último escalonamento. Desta forma, é possível que venha a ser escalonada novamente antes da thread ‘t2’ terminar.</em></p>
+
+<p><strong>Sugestão: Rever Secção 3.5.4 - Tarefas-Interface POSIX</strong></p>
+
+<hr>
+
+<p><strong>Ex. 10  Considere o código do seguinte programa Unix (por simplicidade, omitem-se verificações de erros):</strong></p>
+
+<pre><code>1.  #include &lt;stdio.h&gt;
+2.  int a;
+3.  fn() {
+4.      a++;
+5.      printf(“X %d\n”, a);
+6.      exit(0);
+7.  }
+8.
+9.  main(int argc, char **argv) {
+10.     int val;
+11.     a = 0;
+12.     printf(“Y %d\n”, a);
+13.     if (fork() == 0) {fn();}
+14.     wait(&amp;val);
+15.     printf(“Z %d\n”, a);
+16. }
+</code></pre>
+
+<p><strong>a) Qual a saída deste programa? Se houver mais do que uma possibilidade, indique todas as possíveis saídas.</strong></p>
+
+<p><em>Saída possível 1: </em> <br>
+<em>‘Y 0</em> <br>
+<em>X 1</em> <br>
+<em>Z 0’</em>  </p>
+
+<p><em>Saída possível 2 (se o “fork” falhar):</em> <br>
+<em>‘Y 0</em> <br>
+<em>Z 0’</em>  </p>
+
+<p><strong>b) Escreva um novo programa que seja equivalente (no sentido de executar a mesma sequência de código, apesar de não ter necessariamente a mesma saída), exceto no seguinte aspeto: na linha 13 deve lançar uma nova tarefa em vez de um novo processo. Deve utilizar a interface POSIX para todas as funções relacionadas com as tarefas. Tenha o cuidado de atualizar as restantes funções do sistema operativo que são invocadas neste código em conformidade. Por simplicidade, omita verificações de erros.</strong></p>
+
+<pre><code>1.  #include &lt;stdio.h&gt;
+2.  int a;
+3.  void *fn(void *arg) {
+4.      a++;
+5.      printf(“X %d\n”, a);
+6.      return 0;
+7.  }
+8.
+9.  main(int argc, char **argv) {
+10.     pthread_t tid;
+11.     a = 0;
+12.     printf(“Y %d\n”, a);
+13.     pthread_create(&amp;tid, NULL, fn, NULL);
+14.     pthread_join(tid, NULL);
+15.     printf(“Z %d\n”, a);
+16. }
+</code></pre>
+
+<p><strong>c) Qual a saída do novo programa?</strong></p>
+
+<p><em>Saiída possível 1:</em> <br>
+<em>‘Y 0</em> <br>
+<em>X 1</em> <br>
+<em>Z 1’</em></p>
+
+<p><em>Saída possível 2 (se o “pthread_create” falhar):</em> <br>
+<em>‘Y 0</em> <br>
+<em>Z 0’</em></p>
+
+<p><strong>d) Ordene em termos de velocidade de comutação, da mais rápida para a mais lenta, as seguintes possibilidades para a execução deste programa:</strong></p>
+
+<ol>
+<li><strong>Usando tarefas núcleo;</strong></li>
+<li><strong>Usando pseudotarefas;</strong></li>
+<li><strong>Usando processos;</strong></li>
+</ol>
+
+<p><em>Pseudotarefas, tarefas núcleo, processos.</em></p>
+
+<p><strong>e) Para a resposta anterior, explique a razão principal para a escolha relativa entre as tarefas núcleo e as pseudotarefas.</strong></p>
+
+<p><em>A principal razão prende-se com o facto da comutação de tarefas reais implicar mais custo do que a comutação de pseudotarefas pois no primeiro caso é preciso passar de modo de utilizador para modo núcleo e vice versa enquanto que no segundo caso a comutação apenas em modo de utilizador.</em></p>
+
+<p><strong>Sugestão: Rever Secção 3.4 – Modelos de Programação de Pocessos</strong></p>
+
+<hr>
+
+
+
+<a name="cap4"></a>
+<h2 id="capítulo-4-gestor-de-processos">Capítulo 4 - Gestor de Processos</h2>
+
+<p><strong>Ex. 1  Considere o seguinte diagrama de estados básico dos processos num sistema operativo.</strong></p>
+
+<p><img src="./Exercícios de Sistemas Operativos_files/4.1.png" alt="alt text" title=""></p>
+
+<p><strong>a) Escreva uma legenda para o diagrama (não se esqueça de indicar o nome dos estados bem como explicar as transições);</strong></p>
+
+<p><em>1 - Em Execução</em> <br>
+<em>2 - Executável</em> <br>
+<em>3 – Bloqueado</em></p>
+
+<p><em>a – O processo em execução bloqueia-se num objeto do sistema operativo (por exemplo, trinco, semáforo ou variável de condição) à espera duma condição que, sem a qual, não pode avançar.</em> <br>
+<em>b – A condição que estava a bloquear o processo (trinco, semáforo ou variável de condição, por exemplo) verifica-se e o processo passa ao estado Executável;</em> <br>
+<em>c – O processo em execução libertou o processador (porque expirou o seu quantum ou por se ter bloqueado), tendo o despacho colocado um outro processo executável em execução;</em> <br>
+<em>d – Outro processo no estado executável tem maior prioridade e é comutado pelo escalonador.</em></p>
+
+<p><strong>b) O diagrama não inclui um estado presente no Unix denominado zombie. Explique porque é necessário este estado, ou seja, por que motivo o Unix não elimina o contexto de um processo mal este termina;</strong></p>
+
+<p><em>O estado zombie é atingido quando um processo P termina. Neste momento, o núcleo do SO elimina as estruturas de dados referentes ao processo que terminou ( i.e. o seu contexto) à exceção da estrutura que guarda o valor de retorno da função exit (que resultou no término do processo). Esta informação é necessária para o pai do processo P conseguir obter a informação do término através da chamada de sistema wait (e que foi passado como argumento na função exit) Aquando da chamada à função wait, o núcleo do SO verifica se existe algum processo filho no estado zombie.</em></p>
+
+<p><strong>Sugestão: Rever Secção 4.2 – Representação dos Processos</strong></p>
+
+<hr>
+
+<p><strong>Ex 2. Considere dois algoritmos de escalonamento multi-lista, um com prioridades fixas e outro igual ao do Linux. Para cada uma das seguintes situações, indique qual escalonador escolheria e por que motivo.</strong></p>
+
+<p><strong>a) Suporte para processos interativos;</strong></p>
+
+<p><em>Escalonador do Unix, visto que este usa prioridades dinâmicas que beneficiam processos que usem pouco tempo de processador. Deste modo, processos interativos (i.e., E/S intensivos) são favorecidos no acesso ao processador comparativamente a processos CPU intensivos.</em></p>
+
+<p><strong>b) Minimização da complexidade da implementação do escalonador.</strong></p>
+
+<p><em>É mais simples implementar um escalonador com prioridades fixas visto que, ao contrário de um escalonador com prioridades dinâmicas, não é necessário realizar cálculos complexos para atualizar a prioridade de cada processo nem manter múltiplas filas.</em></p>
+
+<p><strong>Sugestão: Rever Secções 4.3.2 e 4.4.6 – Escalonamento</strong></p>
+
+<hr>
+
+<p><strong>Ex. 3 Suponha que num sistema operativo estão a correr dois processos. O processo P2 é CPU intensivo (não realizando qualquer operaçãos de E/S) e o processo P1 executa o seguinte código:</strong></p>
+
+<pre><code>main() {
+    while(!terminado) {
+        trabalhoCPU();  // Requer uma unidade de tempo de CPU
+        trabalhoCPU();  // Requer uma unidade de tempo de CPU
+        efetuaES(); // Operação de E/S com duração de 2 unidades de tempo
+                    // (quando chamada, bloqueia imediatamente durante 2 unidades de tempo)
+        trabalhoCPU();  // Requer uma unidade de tempo de CPU
+    }
+}
+</code></pre>
+
+<p><strong>Os processos têm as seguintes características:</strong></p>
+
+<table>
+<thead>
+<tr>
+  <th>Processo</th>
+  <th>Prioridade Base</th>
+  <th>Instante de Início de Execução</th>
+  <th>Tempo Total de CPU</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td>P1</td>
+  <td>10</td>
+  <td>0</td>
+  <td>6 (duas iterações completas do while)</td>
+</tr>
+<tr>
+  <td>P2</td>
+  <td>11</td>
+  <td>3</td>
+  <td>3</td>
+</tr>
+</tbody></table>
+
+
+<p><strong>Nota: a coluna Tempo Total de CPU denota o tempo que o processo irá consumir durante toda a sua execução.</strong></p>
+
+<p><strong>Suponha que:</strong> <br>
+- <strong>O algoritmo de escalonamento utilizado é preemptivo, com prioridades dinâmicas (em que um valor numérico de prioridade mais elevado corresponde a um processo mais prioritário);</strong> <br>
+- <strong>A prioridade de um processo começa por ser sua prioridade base, sofrendo um aumento de três unidades sempre que o processo sai do estado bloqueado;</strong> <br>
+- <strong>A prioridade do processo diminui uma unidade após cada quantum (time-slice) em que o processo tenha estado em execução, até atingir novamente a prioridade base:</strong> <br>
+- <strong>Se dois processos tiverem igual prioridade, o escalonador escolhe o que não é executado há mais tempo;</strong> <br>
+- <strong>A duração do quantum é de uma unidade de tempo;</strong></p>
+
+<p><strong>Preencha a seguinte tabela, indicando, para cada time-slice, qual o estado de cada processo do sistema, e a respetiva prioridade no início do quantum. Utilize a seguinte notação: Letra E – Em execução; Letra B – Bloqueado; Letra V – Executável; Entrada em branco – processo não está ativo no sistema (não iniciou ou já terminou).</strong></p>
+
+<p><strong>Note que na solução correta não é necessário utilizar mais espaço do que o fornecido.</strong></p>
+
+<table>
+<thead>
+<tr>
+  <th>0</th>
+  <th>1</th>
+  <th>2</th>
+  <th>3</th>
+  <th>4</th>
+  <th>5</th>
+  <th>6</th>
+  <th>7</th>
+  <th>8</th>
+  <th>9</th>
+  <th>10</th>
+  <th>11</th>
+  <th>12</th>
+  <th>13</th>
+  <th>14</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td>P1</td>
+  <td>E (10)</td>
+  <td>E (10)</td>
+  <td>E&gt;B (10)</td>
+  <td>B (10)</td>
+  <td>E (13)</td>
+  <td>E (12)</td>
+  <td>V (11)</td>
+  <td>E (11)</td>
+  <td>E&gt;B (10)</td>
+  <td>B (10)</td>
+  <td>E (13)</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>P2</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>E (11)</td>
+  <td>V (11)</td>
+  <td>V (11)</td>
+  <td>E (11)</td>
+  <td>V (11)</td>
+  <td>E (11)</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+</tbody></table>
+
+
+<p><em>Nota: nas time-slices 2 e 8, são representadas as transições do estado E para o estado B dado que, no início de cada uma dessas time-slices, o processo está em execução; no entanto, ao chamar a função efetuaES, este é bloqueado de seguida.</em></p>
+
+<p><strong>Sugestão: Rever Secções 4.3.2 e 4.4.6 – Escalonamento</strong></p>
+
+<hr>
+
+<p><strong>Ex 4. Suponha que num sistema operativo estão a correr três processos. Dois deles (P2 e P3) são CPU intensivos (não executam quaisquer operações de E/S) e o processo P1 executa o seguinte código:</strong></p>
+
+<pre><code>main() {
+    while (! terminado) {
+        trabalhoCPU();  // Requer uma unidade de tempo de CPU
+        efetuaES(); // Bloqueia imediatamente e desbloqueia ao fim de 3 unidades de tempo
+        trabalhoCPU();  // Requer uma unidade de tempo de CPU
+    }
+}
+</code></pre>
+
+<p><strong>Os processos têm as seguintes características:</strong></p>
+
+<table>
+<thead>
+<tr>
+  <th>Processo</th>
+  <th>Prioridade</th>
+  <th>Instante de Início de Execução</th>
+  <th>Tempo Total de CPU</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td>P1</td>
+  <td>20</td>
+  <td>0</td>
+  <td>6</td>
+</tr>
+<tr>
+  <td>P2</td>
+  <td>15</td>
+  <td>2</td>
+  <td>8</td>
+</tr>
+<tr>
+  <td>P3</td>
+  <td>30</td>
+  <td>8</td>
+  <td>4</td>
+</tr>
+</tbody></table>
+
+
+<p><strong>Nota: a coluna Tempo Total de CPU denota o tempo que o processo irá consumir durante toda a sua execução.</strong></p>
+
+<p><strong>a) Suponha que o algoritmo de escalonamento utilizado é preemptivo, com prioridades fixas (em que o valor numérico de prioridade mais elevado corresponde a um processo mais prioritário). Preencha a seguinte tabela, indicando, para cada instante de tempo, qual o estado de cada processo do sistema.</strong></p>
+
+<p><strong>Utilize a seguinte notação: Letra E – Em execução; Letra B – Bloqueado; Letra V – Executável; Entrada em branco – processo não está ativo no sistema (não iniciou ou já terminou).</strong></p>
+
+<p><strong>Note que na solução correta não é necessário utilizar mais espaço do que o fornecido.</strong></p>
+
+<table>
+<thead>
+<tr>
+  <th>0</th>
+  <th>1</th>
+  <th>2</th>
+  <th>3</th>
+  <th>4</th>
+  <th>5</th>
+  <th>6</th>
+  <th>7</th>
+  <th>8</th>
+  <th>9</th>
+  <th>10</th>
+  <th>11</th>
+  <th>12</th>
+  <th>13</th>
+  <th>14</th>
+  <th>15</th>
+  <th>16</th>
+  <th>17</th>
+  <th>18</th>
+  <th>19</th>
+  <th>20</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td>P1</td>
+  <td>E</td>
+  <td>E&gt;B</td>
+  <td>B</td>
+  <td>B</td>
+  <td>E</td>
+  <td>E</td>
+  <td>E&gt;B</td>
+  <td>B</td>
+  <td>B</td>
+  <td>V</td>
+  <td>V</td>
+  <td>V</td>
+  <td>E</td>
+  <td>E</td>
+  <td>E&gt;B</td>
+  <td>B</td>
+  <td>B</td>
+  <td>E</td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>P2</td>
+  <td></td>
+  <td></td>
+  <td>E</td>
+  <td>E</td>
+  <td>V</td>
+  <td>V</td>
+  <td>E</td>
+  <td>E</td>
+  <td>V</td>
+  <td>V</td>
+  <td>V</td>
+  <td>V</td>
+  <td>V</td>
+  <td>V</td>
+  <td>E</td>
+  <td>E</td>
+  <td>E</td>
+  <td>V</td>
+  <td>E</td>
+  <td></td>
+</tr>
+<tr>
+  <td>P3</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>E</td>
+  <td>E</td>
+  <td>E</td>
+  <td>E</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+</tbody></table>
+
+
+<p><strong>b) Preencha uma nova tabela, mas agora supondo que o algoritmo de escalonamento utilizado era o de time-slices em round-robin Todos os processos têm igual prioridade e com um time-slice a durar uma unidade de tempo.</strong></p>
+
+<p><strong>Suponha que, ao sair do estado Bloqueado, ou ao iniciar, um processo vai para o final da lista dos processos executáveis.</strong></p>
+
+<table>
+<thead>
+<tr>
+  <th>0</th>
+  <th>1</th>
+  <th>2</th>
+  <th>3</th>
+  <th>4</th>
+  <th>5</th>
+  <th>6</th>
+  <th>7</th>
+  <th>8</th>
+  <th>9</th>
+  <th>10</th>
+  <th>11</th>
+  <th>12</th>
+  <th>13</th>
+  <th>14</th>
+  <th>15</th>
+  <th>16</th>
+  <th>17</th>
+  <th>18</th>
+  <th>19</th>
+  <th>20</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td>P1</td>
+  <td>E</td>
+  <td>E&gt;B</td>
+  <td>B</td>
+  <td>B</td>
+  <td>V</td>
+  <td>E</td>
+  <td>V</td>
+  <td>E</td>
+  <td>E&gt;B</td>
+  <td>B</td>
+  <td>B</td>
+  <td>V</td>
+  <td>E</td>
+  <td>V</td>
+  <td>V</td>
+  <td>E</td>
+  <td>E&gt;B</td>
+  <td>B</td>
+  <td>B</td>
+  <td>E</td>
+</tr>
+<tr>
+  <td>P2</td>
+  <td></td>
+  <td></td>
+  <td>E</td>
+  <td>E</td>
+  <td>E</td>
+  <td>V</td>
+  <td>E</td>
+  <td>V</td>
+  <td>V</td>
+  <td>E</td>
+  <td>V</td>
+  <td>E</td>
+  <td>V</td>
+  <td>V</td>
+  <td>E</td>
+  <td>V</td>
+  <td>V</td>
+  <td>E</td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>P3</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>E</td>
+  <td>V</td>
+  <td>E</td>
+  <td>V</td>
+  <td>V</td>
+  <td>E</td>
+  <td>V</td>
+  <td>V</td>
+  <td>E</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+</tbody></table>
+
+
+<p><em>Nota: na time-slice 8, também é aceitável colocar P2 em execução já que, quer P2 quer P3 são colocados no final da lista de processos executáveis.</em></p>
+
+<p><strong>c) Indique uma desvantagem do algoritmo de round-robin (sem prioridades). Explique essa desvantagem usando o exemplo da pergunta anterior.</strong></p>
+
+<p><em>O algoritmo sem prioridades apresenta a desvantagem de escalonar os processos de uma forma que não favorece os processos que realizam E/S.  É possível ver este efeito no exemplo anterior ao verificar que o processo P1 (que realiza E/S) é o último a terminar.</em></p>
+
+<p><strong>d) Explique de que forma um algoritmo com prioridades dinâmicas (tomando como exemplo o do Unix) resolve esse problema.</strong></p>
+
+<p><em>Os algoritmos com prioridades dinâmicas tendem a favorecer processos que utilizam menos o processador, i.e, dão prioridade no acesso ao processador os processos que pouco o utilizam, por exemplo processos E/S intensivos.</em></p>
+
+<p><strong>Sugestão: Rever Secções 4.3.2 e 4.4.6 – Escalonamento</strong></p>
+
+<hr>
+<!--
+<p><strong>5. Considere a utilização de signals em Unix.</strong></p>
+
+<p><strong>a) O processamento de um signal com rotina de tratamento atribuída ocorre em duas etapas. Indique quais são e quais as ações que decorrem em cada uma delas.</strong></p>
+
+<p><em>O processamento de um signal ocorre nas seguintes etapas: i) envio do signal e ii) deteção e tratamento do signal. Na primeira etapa, o núcleo regista a existência de um signal de determinado tipo pendente no descritor do processo destinatário. Na segunda etapa, que ocorre quando o processo destinatário efetua uma transição de modo núcleo para modo utilizador, o núcleo prepara o ambiente de execução do processo para executar imediatamente a rotina de tratamento para o signal (se existir tal rotina).</em></p>
+
+<p><strong>b) Em que condições é que a segunda parte do processamento indicado na alínea anterior pode ser desencadeada?</strong></p>
+
+<p><em>O tratamento de um signal apenas é desencadeado aquando de uma transição de modo de núcleo para modo de utilizador.</em></p>
+
+<p><strong>c) A restrição da alínea anterior poderá originar uma situação em que um processo continua a correr o código em modo utilizador apesar de ter signals pendentes? Porquê?</strong></p>
+
+<p><em>Sim, se um processo estiver a executar-se em modo de utilizador e não efetuar quaisquer chamadas de sistema, este pode ter signals pendentes que só irão ser tratados da próxima vez que o processo retornar de modo de núcleo (por exemplo, no próximo escalonamento).</em></p>
+
+<p><strong>Sugestão: Rever Secção 4.4.7 - Implementação dos Signals</strong></p>
+
+-->
+
+<a name="cap5"></a>
+<h2 id="capítulo-5-sincronização-secções-críticas">Capítulo 5 – Sincronização: Secções Críticas</h2>
+
+<p><strong>Ex. 1 No âmbito das soluções que asseguram a exclusão mútua, diga em que consiste a noção de míngua (starvation). Como se devem comportar as soluções corretas no que diz respeito à míngua?</strong></p>
+
+<p><em>A noção de míngua (ou starvation) refere-se à situação onde uma ou mais tarefas, que pretendem aceder a um recurso, não o conseguem, sistematicamente sendo ultrapassadas por outras tarefas que lhe acedem  (mesmo que estejam há menos tempo à espera de entrar). Uma solução correta relativamente à míngua deve garantir que todas as tarefas têm igual oportunidade de acesso ao recurso em causa, não havendo preferências ou prioridades na seleção de tarefas a entrar na secção crítica.</em></p>
+
+<p><strong>Sugestão: Rever Secção 5.2 – Requisitos de uma Secção Crítica.</strong></p>
+
+<hr>
+
+<p><strong>Ex. 2 Diga o que entende por espera ativa numa solução para o problema da secção crítica.</strong></p>
+
+<p><em>Espera ativa numa solução para o problema da secção crítica significa que um ou mais fios de execução estão continuamente a testar uma condição de entrada na secção crítica e essa condição só se alterará se o fio de execução deixar de efetuar esse mesmo teste. A utilização de espera ativa é muito comum em soluções algorítmicas para exclusão mútua (e é uma desvantagem clara relativamente a soluções com base em objetos do sistema operativo que não ocupam o processador de forma inútil enquanto a condição de espera não varia).</em></p>
+
+<p><strong>Sugestão: Rever Secção 5.3 – Exclusão Mútua Algorítmica.</strong></p>
+
+<hr>
+
+<p><strong>Ex. 2 Considere um sistema operativo em que, durante a sequência de teste e modificação de uma variável partilhada (trinco), a exclusão mútua é conseguida através da inibição das interrupções. Diga qual a desvantagem desta solução.</strong></p>
+
+<p><em>Existem várias desvantagens:</em></p>
+
+<ol>
+<li><em>não funciona em multiprocessadores;</em></li>
+<li><em>só funciona dentro do núcleo;</em> </li>
+<li><em>só é aceitável com secções críticas muito pequenas;</em></li>
+<li><em>torna o sistema vulnerável a bugs dentro da secção crítica.</em></li>
+</ol>
+
+<p><strong>Seguestão: Rever Secção 5.4.1 – Inibição de Interrupções.</strong></p>
+
+<hr>
+
+<p><strong>Ex. 4 Para resolver os problemas da secção crítica há três tipos de solução possíveis, que diferem consideravelmente nos recursos que implicam, no desempenho e na sua facilidade de utilização no modelo computacional. Diga quais são e apresente as vantagens/desvantagens comparativas.</strong></p>
+
+<p><em>Secções críticas podem der implementadas de três formas diferentes:</em> <br>
+1. <em>algoriticamente. Esta solução apenas usa leituras e escritas de varáveis; no entanto, é difícil/complexa de usar na criação de programas e possui limitações relativamente ao número de tarefas que suporta e, mais grave ainda, implica a utilização de espera ativa;</em> <br>
+2. <em>baseada no hardware, que pode ser feita via inibição de interrupções ou usando instruções especiais. A primeira apenas pode ser utilizada em modo núcleo, em pequenos trechos de código e em sistemas com um único processador. A segunda pode ser usada com multiprocessadores e pode ser usada em modo de utilizador. No entanto, requer instruções especiais (do tipo test-and-set) e requer que o processo fique em espera ativa (testanto a variável do trinco);</em> <br>
+3. <em>utilizando objetos de sincronização (trincos e semáforos) suportados pelo núcleo. Esta solução combina as vantagens da solução anterior e permite evitar a espera ativa.</em></p>
+
+<p><strong>Seguestão: Rever Secções 5.3 (Exclusão Mútua Algorítmica), 5.4 (Exclusão Mútua Baseada no Hardware), e 5.5 (Exclusão Mútua com Objetos de Sincronização).</strong></p>
+
+<hr>
+
+
+
+<a name="cap6"></a>
+<h2 id="capítulo-6-programação-concorrente">Capítulo 6 – Programação Concorrente [com memória partilhada]</h2>
+
+<p><strong>Sugestão para todos os exercícios abaixo: Rever Secção 6.3 – Exemplos de Programação Concorrente e
+    "An introduction to programming with threads (mutexes &amp; condition
+    variables)" (bibliografia adicional).</strong></p>
+
+
+
+    <p><strong>
+	Ex. 1 Considere uma garagem na qual existem N lugares de estacionamento. A garagem tem várias entradas, sendo o acesso gerido por uma aplicação central com múltiplas tarefas. Cada tarefa é responsável por interagir com um terminal em cada entrada da garagem. Cada carro com acesso ao parque é identificado por um inteiro.
+    <br>
+Cada condutor que se aproxima de uma entrada executa a função ocupar_lugar, implementada como de seguida, para reservar um lugar antes de entrar, e chama liberta_lugar quando sai da garagem. O vetor lugares[N] mantém o estado de cada lugar; a cada momento, cada entrada no vetor pode conter o valor LIVRE ou o identificador do carro que tem direito a ocupar o lugar.
+</strong></p>
+
+    <pre><code>
+	  int lugares[N] = {LIVRE, ..., LIVRE}; /* todos os elementos estão LIVRES */
+
+	  1. int ocupa_lugar(int carId) {
+	  2.   int i;
+	  3.   for (i=0; i&lt;N; i++) {
+	  4.     if (lugares[i] == LIVRE) {
+	  5.       lugares[i] = carId;
+	  6.       return i;
+	  7.     }
+	  8.   }
+	  9.   return -1;
+	  10. }
+	
+	  11. void liberta_lugar(int carId) {
+	  12.   int i;
+	  13.   for (i=0; i&lt;N; i++) {
+	  14.     if (lugares[i] == carId) {
+	  15.       lugares[i] = LIVRE;
+	  16.       return;
+	  17.     }
+	  18.   }
+	  19. }
+    </code></pre>
+
+    <p><strong>
+    a) Após a inauguração do sistema, verificaram-se situações de conflitos entre condutores que reclamaram que, tendo acedido à garagem concorrentemente por entradas diferentes, lhes tinha sido atribuído o mesmo lugar. Analisando a implementação acima, indique a razão deste erro. Ilustre-a com um cenário concreto de execução que leve a esta situação indesejada.</strong></p>
+
+    <p><em>
+Duas tarefas chamam <em>ocupa_lugar</em> concorrentemente, observando ambas o lugar 0 livre (linha 4, primeira iteração do ciclo) antes de alguma marcar o lugar como ocupado (linha 5), logo ambas ocupam esse lugar.
+    </em></p>
+
+    <p><strong>
+b) Proponha uma correção ao programa. Na sua solução não deve recorrer a espera ativa.
+    </strong></p>
+
+
+    <pre><code>
+	  int lugares[N] = {LIVRE, ..., LIVRE}; /* todos os elementos estão LIVRES */
+	  <b>trinco t;</b>
+	
+	  1. int ocupa_lugar(int carId) {
+	  2.   int i;
+	  <b>3.   fechar(t);</b>
+	  4.   for (i=0; i&lt;N; i++) {
+	  5.     if (lugares[i] == LIVRE) {
+	  6.       lugares[i] = carId;
+	  <b>7.       abrir(t);</b>
+	  8.       return i;
+	  9.     }
+	  10.   }
+	  <b>11.   abrir(t);</b>
+	  12.   return -1;
+	  13. }
+	
+	  14. void liberta_lugar(int carId) {
+	  15.   int i;
+	  <b>16.   fechar(t);</b>
+	  17.   for (i=0; i&lt;N; i++) {
+	  18.     if (lugares[i] == carId) {
+	  19.       lugares[i] = LIVRE;
+	  <b>20.       abrir(t);</b>
+	  21.       return;
+	  22.     }
+	  23.   }
+	  <b>24.   abrir(t);</b>
+	  25. }
+      </code></pre>
+
+    <p><strong>
+	c) Sempre que a função ocupa_lugar é chamada mas a garagem está cheia, a função deve esperar até que um lugar esteja finalmente disponível. Partindo da solução anterior, estenda ambas as funções para cumprir este novo requisito usando variáveis de condição.
+</strong></p>
+
+        <pre><code>
+	  int lugares[N] = {LIVRE, ..., LIVRE}; /* todos os elementos estão LIVRES */
+	  int livres = N;
+	  trinco t;
+	  <b>varcond condLugar;</b>
+	
+	  1. int ocupa_lugar(int carId) {
+	  2.   int i;
+	  3.   fechar(t);
+	  4.   while (livres == 0)
+	  <b>5.     wait(condLugar, t);</b>
+	  6.   for (i=0; i&lt;N; i++) {
+	  7.     if (lugares[i] == LIVRE) {
+	  8.       lugares[i] = carId;
+	  9.       livres --;
+	  10.      abrir(t);
+	  11.      return i;
+	  12.     }
+	  13.   }
+	  14.   abrir(t); //Nunca deverá chegar aqui
+	  15.   return -1;
+	  16. }
+	
+	  17. void liberta_lugar(int carId) {
+	  18.   int i;
+	  19.   fechar(t);
+	  20.   for (i=0; i&lt;N; i++) {
+	  21.     if (lugares[i] == carId) {
+	  22.       lugares[i] = LIVRE;
+	  23.       livres ++;
+	  <b>24.       signal(condLugar);</b>
+	  25.       abrir(t);
+	  26.       return;
+	  27.     }
+	  28.   }
+	  29.   abrir(t);
+	  30. }
+      </code></pre>
+
+	<p><strong>
+	d) Suponha que uma tarefa T1 chamou ocupa_lugar mas a garagem estava cheia, o que colocou T1 à espera. Quando, de seguida, uma tarefa T2 chamou liberta_lugar. A sua solução permite que uma terceira tarefa, T3, que chame ocupa_lugar depois de T1 se ter colocado em espera possa ganhar um lugar antes de T1?</strong></p>
+
+    <p><em>
+	Sim. Quando T2, ao libertar um lugar, chama a função <em>signal</em> para desbloquear T1, T1 ainda precisará de readquirir o trinco para avançar na secção crítica e ocupar o lugar que ficou livre. No entanto, caso T3 tente obter o trinco nesse momento, é possível que o trinco seja obtido por T3 (que conseguirá assim ocupar o lugar livre) antes de T1 o obter; caso isso aconteça, T1 verificará que a condição <em>livres==0</em> ainda se verifica, logo voltará a bloquear-se na variável de condição.
+</em></p>
+
+
+<hr>
+
+<p><strong>Ex. 2 Considere o seguinte problema:</strong> </p>
+
+<ul>
+<li><strong>existem múltiplas tarefas que por vezes podem querer enviar (produtoras) ou receber (consumidoras) mensagens para/de um canal partilhado;</strong> <br>
+<ul><li><strong>o canal tem a capacidade N e é implementado como um buffer circular;</strong></li>
+<li><strong>a função ‘envia’ permite enviar múltiplas mensagens para o canal de uma só vez, sendo as mensagens colocadas de forma consecutiva no buffer circular; se não houver espaço suficiente, a função envia espera até que haja;</strong></li>
+<li><strong>a função recebe permite receber a próxima mensagem disponível no canal; se o canal estiver vazio, a função espera até chegar uma mensagem.</strong></li></ul></li>
+</ul>
+
+<p><em>Considere a seguinte implementação de uma solução para o problema em causa (em pseudo-código):</em></p>
+
+<pre><code>1.  Message canal[N];
+2.  int livre = N;
+3.  int envia_ptr=0, recebe_ptr=0;
+4.
+5.  envia(Message messages[], int numMsg) {
+6.      while ( livre &lt; numMsg);
+7.      for each (Message m in messages) {
+8.          canal[envia_ptr] = m;
+9.          envia_ptr = (envia_ptr+1) % N;
+10.         livre--;
+11.         }
+12.     }
+13. Message recebe() {
+14.     while ( livre == N);
+15.     Message m = canal[recebe_ptr];
+16.     recebe_ptr = (recebe_ptr+1) % N;
+17.     livre++;
+18.     return m;
+19. }
+</code></pre>
+
+<p><strong>Ex. 2.1 Usando a solução acima apresentada num computador mono-processador, houve utilizadores que detetaram situações anómalas. Para cada situação anómala apresentada abaixo, explique se e porque pode acontecer, ilustrando com um exemplo de execução que produza o mesmo sintoma.</strong></p>
+
+<p><strong>a) “Dois produtores produziram 1 item cada; no entanto, os consumidores apenas encontraram 1 item para consumir.”</strong></p>
+
+<p><em>Considerem-se dois produtores P1 e P2 a executar “envia” de forma concorrente. P1 perde o processador depois de executar a linha 06 e antes de executar a linha 08. Posteriormente P2 executas essas linhas, escrevendo na mesma posição que P1 (ver secção 6.3.4 do livro).</em></p>
+
+<p><strong>b) “Quando um produtor tenta colocar um item no buffer, e este está vazio e há vários consumidores a tentar consumir, o produtor demora muito mais tempo a concluir a operação (do que demoraria se não houvesse consumidores à espera de itens).”</strong></p>
+
+<p><em>Exemplo semelhante ao anterior, para dois consumidores e perca de processador entre as linhas 13 e 14.</em></p>
+
+<p><strong>Ex. 2.2 Proponha uma solução, em pseudo-código, que elimine ou minimize os problemas apontados acima.</strong></p>
+
+<p>a) Na sua solução recorra a trincos lógicos e/ou semáforos. No caso dos semáforos, considere que estes suportam as seguintes operações:</p>
+
+<ul>
+<li>esperar (identificador_do_semaforo, numero_de_unidades);</li>
+<li>assinalar (identificador_do_semaforo, numero_de_unidades).</li>
+</ul>
+
+<p><em>Solução:</em></p>
+
+<pre><code>1.  Message canal[N];
+2.  int livre = N;
+3.  int envia_ptr=0, recebe_ptr=0;
+4.  pode_enviar = criar_semaforo(N),
+5.  pode_receber = criar_semaforo(0);
+6.  trinco_enviar = cria_trinco();
+7.  trinco_receber = cria_trinco();
+
+8.  envia(Message messages[], int numMsg) {
+9.      esperar(pode_enviar, numMsg);
+10.     fechar(trinco_enviar);
+11.     for each (Message m in messages) {
+12.         canal[envia_ptr] = m;
+13.         envia_ptr = (envia_ptr+1) % N;
+14.         livre--;
+15.     }
+16.     abrir(trinco_enviar);
+17.     assinalar (pode_receber, numMesg);
+18. }
+19. Message recebe() {
+20.     esperar(pode_receber,1);
+21.     fechar(trinco_receber);
+22.     Message m = canal[recebe_ptr];
+23.     recebe_ptr = (recebe_ptr+1) % N;
+24.     livre++;
+25.     abrir(trinco_receber);
+26.     assinalar(pode_enviar,1);
+27.     return m;
+28. }
+</code></pre>
+
+<p><strong>b) Explique como é que a solução que apresentou resolve cada um dos comportamentos anómalos apontados acima para a primeira solução (1.a., 1.b, 1.c).</strong></p>
+
+<p><em>1.a e 1.b são resolvidos garantindo a exclusão mútua no acessos os índices e 1.c é resolvido evitando as esperas ativas com esperas bloqueantes com semáforos.</em></p>
+
+<p><strong>c) Diga se a sua solução permite que mensagens sejam enviadas e recebidas por tarefas distintas que usam índices distintos do vetor, permitindo assim um maior grau de concorrência. Altere a sua solução se necessário.</strong></p>
+
+<p><em>Sim, uma vez que o trinco que protege o índice de escrita é diferente do trinco que protege o índice de leitura. Este nível de concorrência não poderia ser atingido caso fosse usado um único trinco.</em></p>
+
+<hr>
+
+
+<p><strong>Ex. 3 Considere que numa empresa existem duas impressoras ligadas a uma rede com vários clientes. Cada impressora recebe pedidos de impressão num tampão circular associado a essa impressora. Enquanto houver pedidos no respetivo tampão, a impressora retira-os do tampão e imprime os respetivos trabalhos. Quando já não existirem pedidos no seu tampão, a impressora fica à espera. Quando os computadores querem imprimir, colocam o pedido no tampão que tiver um menor número de pedidos. Se os dois tampões estiverem cheios, então os computadores ficam à espera.</strong></p>
+
+<p><strong>Usando trincos e variáveis de condição, implemente as rotinas void ColocaPedido(Pedido p) e Pedido ObtemPedido(int id), em que a primeira é chamada pelo o computador que pretende imprimir um trabalho e a segunda é chamada por uma impressora para retirar um pedido de impressão da fila de acordo com o exemplo abaixo. Nota: o parâmetro id identifica a impressora (0 ou 1). Na sua solução pode omitir o tratamento de erros.</strong></p>
+
+<pre><code>1.  void Impressora(int id) {
+2.      Pedido p;
+3.      while (1) {
+4.          p = ObtemPedido(id);
+5.          Imprime(p);
+6.      }
+7.  }
+</code></pre>
+
+<p><em>Solução:</em></p>
+
+<pre><code>
+    #define N 10
+
+    Pedido pedidos[2][N];
+    int prod_idx[2] = {0, 0};
+    int cons_idx[2] = {0, 0};
+    int numPedidos[2] = {0, 0};
+
+    pthread_cond_t pode_cons[2];
+    pthread_cond_t pode_prod;
+    pthread_mutex_t mutex;
+
+
+    void ColocaPedido(Pedido p) {
+      int id;
+      pthread_mutex_lock(&amp;mutex);
+      while (numPedidos[0]+numPedidos[1]==N*2)
+        pthread_cond_wait(&amp;pode_prod, &amp;mutex);
+      if (numPedidos[0] &lt; numPedidos[1])
+        id = 0;
+      else
+        id = 1;
+      pedidos[id][prod_idx[id]] = p;
+      prod_idx[id] = (prod_idx[id] + 1) % N;
+      numPedidos[id]++;
+      pthread_cond_signal(&amp;pode_cons[id]);
+      pthread_mutex_unlock(&amp;mutex);
+    }
+
+    Pedido ObtemPedido(int id) {
+      pthread_mutex_lock(&amp;mutex);
+      while (numPedidos[id] == 0)
+        pthread_cond_wait(&amp;pode_cons[id], &amp;mutex);
+      Pedido p = pedidos[id][cons_idx[id]];
+      cons_idx[id] = (cons_idx[id] + 1) % N;
+      numPedidos[id] --;
+      pthread_cond_signal(&amp;pode_prod);
+      pthread_mutex_unlock(&amp;mutex);
+    }
+
+    int main() {
+      pthread_cond_init(&amp;pode_cons[0], NULL);
+      pthread_cond_init(&amp;pode_cons[1], NULL);
+      pthread_cond_init(&amp;pode_prod, NULL);
+      pthread_mutex_init(&amp;mutex, NULL);
+      ...
+    }
+</code></pre>
+
+<hr>
+
+
+<p><strong>Ex. 4 Pretende-se construir uma aplicação em que tarefas produtoras enviam mensagens para uma tarefa consumidora. As mensagens são colocadas em quatro filas, cada uma associada a um nível de prioridade (podíamos considerar mensagens com quatro níveis de urgência). As mensagens são todas do mesmo tamanho e as filas de mensagens têm espaço para três mensagens. <br>
+Quando uma produtora pretende escrever a mensagem e a fila está cheia, fica bloqueada. A tarefa consumidora retira a mensagem da fila mais prioritária. Se não houver mensagens, deve ficar bloqueada. Programe as duas rotinas que permitem inserir e retirar mensagens:</strong></p>
+
+<pre><code>void inserir(int Prioridade, struct mens m);
+struct mens retirar();
+</code></pre>
+
+<p><strong>Para simplificar, considere as seguintes estruturas:</strong></p>
+
+<ul>
+<li><p><strong>‘struct mens’ para representar as mensagens;</strong></p></li>
+<li><p><strong>‘struct mens[NUM_NIVEIS][TAMANHO] buffer’ para representar as filas de mensagem, NUM_NIVEIS corresponde ao nível de prioridade e TAMANHO ao número máximo de mensagens por fila.</strong></p></li>
+</ul>
+
+<p><strong>a) Utilize variáveis de condição e trincos para sincronizar as tarefas.</strong></p>
+
+<p><em>Solução:</em></p>
+
+<pre><code>
+
+1.  int prodptr[NUM_NIVEIS]; //inicializado a 0
+2.  int consptr[NUM_NIVEIS]; //inicializado a 0
+3.  int num_msgs[NUM_NIVEIS]; //inicializado a 0
+4.  pthread_cond_t filas_prod[NUM_NIVEIS];
+5.  pthread_cond_t fila_cons;
+6.  pthread_mutex_t mutex;
+
+7.  void inserir(int prioridade, struct mems m) {
+8.      pthread_mutex_lock(&amp;mutex);
+9.      while (num_msgs[prioridade] == TAMANHO)
+10.       pthread_cond_wait(&amp;fila_prod[prioridade], &amp;mutex);
+11.     mens[prioridade][prodptr[prioridade]++] = m;
+12.     if (prodptr[prioridade] == TAMANHO) { prodptr[prioridade] = 0; }
+13.     num_msgs[prioridade]++;
+14.     pthread_cond_signal(&amp;fila_cons);
+15.     pthread_mutex_unlock(&amp;mutex);
+16. }
+
+17. struct mens retirar() {
+18.     struct mens res = NULL;
+19.     pthread_mutex_lock(&amp;mutex);
+20.     while (soma(num_mgs, NUM_NIVEIS)==0) //soma todos os valores do array
+21.       pthread_cond_wait(&amp;fila_cons, &amp;mutex);
+20.     for (int nivel = 0; nivel &lt; NUM_NIVEIS; nivel++) {
+21.         if (num_msgs[nivel] &gt; 0) {
+22.             res = mens[nivel][consptr[nivel]++];
+23.             if (consptr[nivel] == TAMANHO) { consptr[nivel] = 0; }
+24.             pthread_cond_signal(&amp;filas_prod[nivel]);
+25.             break;
+26.         }
+27.     }
+28.     pthread_mutex_unlock(&amp;mutex);
+29.     return res;
+30. }
+
+32. int main() {
+33.     pthread_cond_init(&amp;fila_cons, NULL);
+34.     for(int i=0; i&lt;NUM_NIVEIS; i++) {pthread_cond_init(&amp;filas_prod[i], NULL); }
+35.     pthread_mutex_init(&amp;mutex, NULL);
+        ...
+    }
+</code></pre>
+
+
+<p><strong>b) Utilize semáforos e trincos para sincronizar as tarefas.</strong></p>
+
+<p><em>Solução:</em></p>
+
+<pre><code>1.  int prodptr[NUM_NIVEIS];
+2.  int consptr[NUM_NIVEIS];
+3.  int num_msgs[NUM_NIVEIS];
+4.  sem_t filas_prod[NUM_NIVEIS];
+5.  sem_t fila_cons;
+6.  pthread_mutex_t mutex;
+
+7.  void inserir(int prioridade, struct mems m) {
+8.      sem_wait(&amp;filas_prod[prioridade]);
+9.      pthread_mutex_lock(&amp;mutex);
+10.     mens[prioridade][prodptr[prioridade]++] = m;
+11.     if (prodptr[prioridade] == TAMANHO) { prodptr[prioridade] = 0; }
+12.     num_msgs[prioridade]++;
+13.     pthread_mutex_unlock(&amp;mutex);
+14.     sem_post(&amp;fila_cons);
+15. }
+
+16. struct mens retirar() {
+17.     struct mens res = NULL;
+18.     sem_wait(&amp;fila_cons);
+19.     pthread_mutex_lock(&amp;mutex);
+20.     for (int nivel = 0; nivel &lt; NUM_NIVEIS; nivel++) {
+21.         if (num_msgs[nivel] &gt; 0) {
+22.             res = mens[nivel][consptr[nivel]++];
+23.             if (consptr[nivel] == TAMANHO) { consptr[nivel] = 0; }
+24.             sem_post(&amp;filas_prod[nivel]);
+25.             break;
+26.         }
+27.     }
+28.     pthread_mutex_unlock(&amp;mutex);
+29.     return res;
+30. }
+
+32. int main() {
+33.     sem_init(&amp;fila_cons, 0);
+34.     for(int i=0; i&lt;NUM_NIVEIS; i++) { sem_init(&amp;filas_prof[i], TAMANHO); }
+35.     pthread_mutex_init(&amp;mutex, NULL);
+        ...
+    }
+</code></pre>
+
+<hr>
+
+
+<a name="cap7"></a>
+<h2 id="capítulo-7-mecanismos-de-gestão-de-memória">Capítulo 7 – Mecanismos de Gestão de Memória</h2>
+
+<p><strong>Ex. 1 Considere um computador que pode ser descrito pelas afirmações seguintes:</strong></p>
+
+<p><strong>a) Um programa só pode funcionar nos endereços físicos para onde foi escrito, não podendo ser executado diretamente noutra máquina com um mapa de memória diferente ou mesmo noutro endereço da mesma máquina.</strong></p>
+
+<p><strong>b) Não é possível executar simultaneamente dois programas que tivessem sido preparados para se executarem nos mesmos endereços físicos.</strong></p>
+
+<p><strong>Diga, justificando, se o computador em causa suporta endereçamento real ou virtual.</strong></p>
+
+<p><em>O computador descrito suporta endereçamento real, i.e.,  o programa acede diretamente aos endereços de memória (real) fazendo com que: i) o programa apenas se possa executar em máquinas com o mesmo mapa de memória, e ii) o programa não se possa executar simultaneamente com outros programas que usem os mesmos endereços de memória.</em></p>
+
+<p><strong>Sugestão: Rever Secção secção 7.1.4 - Endereçamento Real e Virtual</strong></p>
+
+<p><strong>Ex. 2 Considere um computador que usa o mecanismo de sobreposição (overlays) em memória real. Descreva como funciona e indique as vantagens e desvantagens deste mecanismo (em comparação com memória real sem overlays).</strong></p>
+
+<p><em>A utilização de overlays pressupõe que existem dois tipos de segmentos de memória: memória residente e overlays. Ao longo do tempo a aplicação pode pedir ao sistema operativo para carregar overlays para memória primária (fazendo com que outros overlays sejam colocados em memória secondária). Este mecanismo tem a vantagem de ser simples, i.e., requer pouco esforço na gestão de memória por parte do sistema operativo. Por outro lado, tem três grandes desvantagens: i) requer que o programador faça a gestão dos overlays (o que pode resultar em erros); ii) requer que os programas sejam desenhados de forma a dividir a memória necessária em partes separadas (o que pode nem sempre ser fácil); iii) não resolve a limitação do tamanho da memória utilizada (pois o tamanho da memória residente mais o tamanho de um overlay não pode ser superior à memória primária do computador). </em></p>
+
+<p><strong>Sugestão: Rever Secção 7.3 - Endereçamento Real</strong></p>
+
+<p><strong>Ex. 3 O que motivou o desenvolvimento de programas recolocáveis?</strong></p>
+
+<p><em>O desenvolvimento de programas recolocáveis foi motivado pelo problema de escalonamento introduzido pelos sistemas multiprogramados com partições fixas. Nestes sistemas, cada programa apenas se pode executar numa partição específica, o que faz com que vários programas tenham que aguardar pela sua vez para se executarem num determinado segmento de memória. O desenvolvimento de programas recolocáveis permite executar programas em qualquer zona de memória.</em></p>
+
+<p><strong>Sugestão: Rever Secção 7.3 - Endereçamento Real</strong></p>
+
+<p><strong>Ex. 4 Considere a noção de localidade de referência. Diga em que consiste e qual a sua relevância para o mecanismo de gestão de memória virtual.</strong></p>
+
+<p><em>A noção de localidade de referência pressupõe uma concentração das referências à memória durante certos períodos de tempo. Esta noção é relevante de diferentes formas nos mecanismos de memória virtual. Alguns exemplos: a tradução de endereços virtuais ser feita com a granularidade de uma página ou segmento; a transferência entre memória secundária e primária ser feita com a granularidade de uma página ou segmento; entre outras.</em></p>
+
+<p><strong>Sugestão: Rever Secção 7.4 - Endereçamento Virtual</strong></p>
+
+<p><strong>Ex. 6 Considere a figura no âmbito da memória virtual paginada.</strong></p>
+
+<p><img src="./Exercícios de Sistemas Operativos_files/7.6.1.jpg" alt="alt text" title=""></p>
+
+<p><strong>a) Complete a figura (desenhando diretamente na figura) de modo a que a tradução de endereços seja otimizada. Justifique a sua resposta explicando o funcionamento da otimização que indicou.</strong></p>
+
+<p><img src="./Exercícios de Sistemas Operativos_files/7.6.2.png" alt="alt text" title=""></p>
+
+<p><em>TLB funciona como cache da tabela de páginas, permitindo tradução mais rápida.</em></p>
+
+<p><strong>b) Diga qual a utilidade de cada um dos elementos da PTE.</strong></p>
+
+<p><em>P – indica se a página está presente em memória principal</em> <br>
+<em>R – indica se a página foi acedida  (desde que este bit foi colocado a 0)</em> <br>
+<em>M – indica se a página tem conteúdo diferente da cópia em memória secundária</em> <br>
+<em>Prot – definem a protecção da página</em> <br>
+<em>Base – indica o endereço real do início da página</em></p>
+
+<p><strong>c) Imagine um computador no qual as páginas virtuais têm uma dimensão de 2048 bytes cada e o espaço de endereçamento virtual é 4 Gigabytes. Diga como é que é constituído um endereço virtual.</strong></p>
+
+<p><em>Espaço de endereçamento de 4 GBytes = 2<sup>32</sup> Bytes, logo os endereços virtuais têm 32 bits. Dimensão da página é 2<sup>11</sup>, logo é necessário reservar 11 bits do enredeço virtual para o deslocamento. Logo, cada endereço virtual é constituído por: número de página (21 bits) | deslocamento (11 bits).</em></p>
+
+<p><strong>d) Diga qual o efeito de uma troca de contexto (context switch) nas estruturas indicadas na figura. Tenha em conta a sua resposta à primeira questão deste grupo.</strong></p>
+
+<p><em>TLB é limpa pois passa a ser relativa a outro processo (i.e. outro espaço de endereçamento). Os registos BTP e LTP são alterados para apontarem para a tabela de páginas do novo processo em execução.</em></p>
+
+<p><strong>Sugestão: Rever Secção 7.6 - Paginação</strong></p>
+
+<p><strong>7. Considere um sistema de memória virtual paginada. Qual a razão que obriga a que as instruções sejam recomeçáveis?</strong></p>
+
+<p><em>As instruções devem ser recomeçáveis pois certas instruções necessitam de aceder  a endereços em mais que uma página. Desta forma, um dos endereços pode desencadear uma exceção de gestão de memória quando uma parte da instrução já está em execução. Por esta razão, é necessário que as instruções sejam recomeçáveis.</em></p>
+
+<p><strong>Sugestão: Rever Secção 7.6 - Paginação</strong></p>
+
+<p><strong>8. Considere o mecanismo de copy-on-write.</strong></p>
+
+<p><strong>a) Em que consiste este mecanismo?</strong></p>
+
+<p><em>Este mecanismo permite que vários processos partilhem uma ou mais páginas de memória que podem ser acedidas em modo de leitura. Quando acedidas em modo de escrita por um dos processos, leva à cópia das páginas acedidas e à criação de uma cópia das páginas acedidas no espaço de endereçamento de cada processo.</em></p>
+
+<p><strong>b) Qual a vantagem da sua utilização?</strong></p>
+
+<p><em>Este mecanismo traz a vantagem de permitir que vários processos partilhem páginas de memória em modo de leitura. Desta forma, é possível minimizar a memória total utilizada pelos processos (já quem a memória pode ser partilhada) e permite reduzir o tempo de criação de processos filhos (já que estes são criados com o conteúdo em memória igual ao pais).</em></p>
+
+<p><strong>c) Diga um exemplo no qual este mecanismo é usado no Unix.</strong></p>
+
+<p><em>Este mecanismo é utilizado pelo Unix na criação de processos filhos. Na chamada de sistema fork, o sistema operativo partilha as páginas de memória entre o pai e o filho para permitir a criação mais rápida do processo filho.</em></p>
+
+<p><strong>Sugestão: Rever Secção 7.5.5 - Partilha de Memória Entre Processos</strong></p>
+
+
+<a name="cap8"></a>
+<h2 id="capítulo-8-algoritmos-de-gestão-de-memória">Capítulo 8 - Algoritmos de Gestão de Memória</h2>
+
+<p><strong>Ex. 1 No âmbito da alocação de memória virtual considere a segmentação e a paginação. Indique as vantagens de uma em relação à outra.</strong></p>
+
+<p><em>Na paginação, a alocação é trivial pois qualquer página livre pode ser utilizada (as páginas livres são geridas utilizando uma FIFO). A alocação de segmentos é mais complexa pois é necessário encontrar um segmento de dimensão igual ou superior à dimensão requerida. Pode ser necessário repartir um segmento em dois e colocar a parte de memória não necessária na lista de segmentos livres.</em></p>
+
+<p><strong>Sugestão: Rever Secção 8.5 - Análise Comparativa da Segmentação e Paginação</strong></p>
+
+<p><strong>Ex. 2 Considere um sistema de memória virtual. Diga para que serve a área de transferência (swap area).</strong></p>
+
+<p><em>A área de transferência reside em memória secundária e é utilizada para manter blocos de memória que, por falta de espaço em memória primária, tiveram de ser transferidos para memória secundária. Ou seja, serve para aumentar a capacidade do sistema de memória virtual.</em></p>
+
+<p><strong>Sugestão: Rever Secção 8.4 - Gestão em Memória Paginada</strong></p>
+
+<p><strong>Ex. 3 Existem três formas de desencadear a transferência de um bloco de memória entre memória secundária e memória primária. Diga quais são e descreva cada uma delas de forma sucinta.</strong></p>
+
+<p><em>1- A pedido, i.e., quando o programa ou sistema operativo explicitamente pedem o carregamento do bloco.</em> <br>
+<em>2- Por necessidade, i.e., quando o programa em execução tenta aceder a um endereço de memória e gera uma falta de bloco.</em> <br>
+<em>3- Por antecipação, i.e., quando o sistema operativo carrega blocos de memória que acha que serão acedidos no futuro.</em></p>
+
+<p><strong>Sugestão: Rever Secção 8.2.3 - Substituição de Blocos</strong></p>
+
+<p><strong>Ex. 4 Num sistema de memória paginada, indique uma solução usada para minorar as faltas de página. Ilustre a sua resposta com um exemplo.</strong></p>
+
+<p><em>Uma solução normalmente utilizada é a antecipação da transferência de páginas que sejam muito provavelmente acedidas no futuro; por exemplo, páginas de código adjacentes a uma página carregada recentemente serão muito provavelmente acedidas no futuro próximo.</em></p>
+
+<p><strong>Sugestão: Rever Secção 8.4 - Gestão em Memória Paginada</strong></p>
+
+<p><strong>5. Considere o algoritmo de substituição de páginas denominado NRU, no qual as páginas são organizadas em quatro grupos. Explique em que circunstâncias é que uma página pode pertencer ao “Grupo 1: (R=0, M=1) Não referenciada, modificada”.</strong></p>
+
+<p><em>Uma página pode pertencer a este grupo se tiver sido modificada e posteriormente o bit R ter sido colocado a zero pelo paginador.</em></p>
+
+<p><strong>Sugestão: Rever Secção 8.4 - Gestão em Memória Paginada</strong></p>
+
+<p><strong>Ex. 6 Considere o algoritmo de substituição de páginas denominado FIFO. Descreva uma situação, com dois processos, na qual seja clara a desvantagem deste algoritmo.</strong></p>
+
+<p><em>Imaginando um processo que utilize poucas páginas de memória (embora as utilize regularmente) e outro processo que esteja sempre a aceder a diferentes páginas de memória. Neste cenário, o FIFO representa uma clara desvantagem para o primeiro processo, já que as suas páginas serão periodicamente retiradas de memória apesar de serem acedidas frequentemente.</em></p>
+
+<p><strong>Sugestão: Rever Secção Secção 8.4 - Gestão em Memória Paginada</strong></p>
+
+<p><strong>Ex. 7 Num sistema paginado, considere a noção de working set de um processo.</strong></p>
+
+<p><strong>a) Diga o que entende por esta noção;</strong></p>
+
+<p><em>Define-se por espaço de trabalho ou working set o conjunto de páginas acedidas pelo processo num determinado espaço de tempo.</em></p>
+
+<p><strong>b) Qual a implicação desta noção ao nível da paginação efetuada pelo sistema operativo?</strong></p>
+
+<p><em>Esta noção implica que o sistema operativo deve assegurar que, para cada processo em execução, deve haver espaço disponível em memória primária para alojar o respetivo espaço de trabalho.</em></p>
+
+<p><strong>Sugestão: Rever Secção 8.4 - Gestão em Memória Paginada</strong></p>
+
+<p><strong>Ex. 8 Um computador com memória virtual pode entrar em colapso (trashing). Diga o que significa e como se pode evitar.</strong></p>
+
+<p><em>Um computador pode entrar em colapso se vários processos não tiverem as páginas dos seus espaços de trabalho em memória. Nesta situação, existirão inúmeras faltas de páginas (trashing). Para evitar este problema devem colocar-se em memória apenas os processos cujos espaços de trabalho caibam em memória.</em></p>
+
+<p><strong>Sugestão: Rever Secção 8.4 - Gestão em Memória Paginada</strong></p>
+
+<a name="cap9"></a>
+<h2 id="capítulo-9-sistemas-de-ficheiros">Capítulo 9 – Sistemas de Ficheiros</h2>
+
+<p><strong>Ex. 1  Qual a estrutura do núcleo onde é mantida a dimensão de um ficheiro: diretório, tabela de descritores de ficheiros abertos do processo, tabela de ficheiros abertos global ou inode? Qual a vantagem desta localização relativamente às restantes?</strong></p>
+
+<p><em>A dimensão de um ficheiro é mantida no inode. Relativamente às outras localizações, são apresentadas possíveis razões para que não faça sentido guardar (em cada uma das localizações alternativas):</em> <br>
+- <em>diretório: uma vez que o mesmo inode pode ser referênciado a partir de vários diretórios, uma alteração no tamanho do ficheiro levaria a várias atualizações (uma em cada diretório onde o inode aparece);</em> <br>
+- <em>tabela de descritores: esta tabela é local a cada processo, o que faria com que uma atualização no tamanho do ficheiro por parte de um processo levasse a várias atualizações, uma para cada entrada na tabela de descritores do processo relativa ao ficheiro alterado;</em> <br>
+- <em>tabela de ficheiros abertos: uma vez que é possível abrir o mesmo ficheiro múltiplas vezes, uma atualização no tamanho do ficheiro por parte de um processo levaria a múltiplas atualizações, uma para cada entrada na tabela de ficheiros abertos relativa ao ficheiro alterado.</em></p>
+
+<p><strong>Sugestão: Rever Secção 9.3.2.1 - Estruturas Persistentes</strong></p>
+
+<hr>
+
+<p><strong>Ex. 2 Considere a seguinte sequência de acontecimentos, em que dois processos, P1 e P2, acedem aos ficheiros indicados na seguinte ordem:</strong></p>
+
+<pre><code>P1: f = open(“/users/cnr/dir/f1”); read(f, buf, 50);
+P2: g = open(“/users/cnr/dir/f1”); read(g, buf, 100);
+P1: h = open(“/tmp/tempfile”);
+P1: p = fork(); /* cria um processo filho, P3 */
+P1: read(f, buf, 150);
+P3: read(f, buf, 200);
+</code></pre>
+
+<p><strong>Represente graficamente as tabelas de file descriptors por processo, a tabela de ficheiros abertos global do sistema e a tabela de descritores de ficheiros (inodes). Inclua o valor dos índices que indicam a posição.</strong></p>
+
+<p><img src="./Exercícios de Sistemas Operativos_files/9.5.png" alt="alt text" title=""></p>
+
+<p><strong>Sugestão: Rever Secção 9.3.2.1 - Estruturas Persistentes</strong></p>
+
+<hr>
+
+<p><strong>Ex. 3 Considerando blocos de 4KB e referências de 4B, diga quantos acessos a disco são necessários para ler o byte da posição 16.345.324 e o da posição 357 de um ficheiro guardado num sistema de ficheiros ext2. (secção 9.3.2.1)</strong></p>
+
+<p><em>O byte 16.345.324 está no bloco 3990 (=16.345.324/(4 </em> 1024))*</p>
+
+<p><em>O byte 357 está no bloco 0 (=357/(4 </em> 1024))*</p>
+
+<p><em>Em ext2, cada inode contém 15 referências para blocos, 12 das quais são diretas.</em></p>
+
+<p><em>Referências por bloco de índices = Tamanho de Bloco / Tamanho de Referência = 4 </em> 1024 / 4 = 1024*</p>
+
+<p><em>O primeiro bloco de índices contém os blocos 12 a 1036.</em></p>
+
+<p><em>O segundo bloco de índices contém os blocos : 1037 a 1049616 (=1037 + 1024*1024)</em></p>
+
+<p><em>Para o primeiro cenário são precisos (não contando com o acesso ao inode) 3 acessos a disco: i) acesso ao segundo bloco de índices; ii) acesso ao bloco de índices de segundo grau; acesso ao bloco de dados 3990.</em></p>
+
+<p><em>Para o segundo cenário são precisos (não contando com o acesso ao inode) 1 acesso a disco (o bloco de dados 0 está referenciado diretamente pelo inode).</em></p>
+
+<p><strong>Sugestão: Rever Secção 9.3.2.1 - Estruturas Persistentes</strong></p>
+
+<hr>
+
+<p><strong>Ex. 4 Considere um sistema de ficheiros do tipo EXT (Linux) no qual cada inode tem as seguintes características. Cada i-node ocupa 64 bytes no total, que incluem:</strong> <br>
+- <strong>5 referências directas para blocos,</strong> <br>
+- <strong>1 referência indirecta de 1º nível,</strong> <br>
+- <strong>1 referência indirecta de 2º nível,</strong> <br>
+- <strong>cada referência para um bloco em disco ocupa 4 bytes (dimensão R),</strong> <br>
+- <strong>cada bloco em disco tem 1024 bytes (dimensão B).</strong></p>
+
+<p><strong>a) Qual a dimensão máxima de um ficheiro?</strong></p>
+
+<p><em>Dimensão máxima de um ficheiro = B x (5 + B/R + (B/R)^2) = 1024 </em> (5 + 1024/4 + (1024/4)^2) bytes*</p>
+
+<p><strong>b) Quantos blocos são ocupados por um ficheiro com a dimensão de 5130 bytes? Justifique a sua resposta.</strong></p>
+
+<p><em>Blocos diretos têm a capacidade de 5 </em> 1024 bytes = 5120 bytes; logo, é preciso mais um bloco de dados para guardar os restantes bytes o que implica usar 1º nível de indireção.*</p>
+
+<p><em>Assim, são ocupados 7 blocos: 6 blocos de dados + 1 bloco de índices.</em></p>
+
+<p><strong>c) Assuma que existe apenas uma partição no disco. Qual o número máximo de ficheiros que este sistema suporta sabendo que a tabela de inodes em disco ocupa, no máximo, X bytes ? Justifique a sua resposta.</strong></p>
+
+<p><em>Logo, o número máximo de ficheiros é igual ao número máximo de inodes pelo que este número é: X bytes reservados em disco para a tabela de inodes / dimensão de cada inode.</em></p>
+
+<p><strong>Sugestão: Rever Secção 9.3.2.1 - Estruturas Persistentes</strong></p>
+
+<hr>
+
+<p><strong>Ex. 5 Considere agora que tem um sistema de ficheiros do tipo FAT no qual cada referência para bloco tem 4 bytes e cada bloco tem 1024 bytes (tal como na questão anterior), e no qual está guardado um ficheiro com 5*1024 bytes ( ou seja 5120 bytes). Conhecendo o índice do 1º bloco do ficheiro, quantas leituras da FAT tem de efetuar até localizar o bloco que contém a posição 5000?</strong></p>
+
+<p>*O byte 5000 está contido no 5º bloco do ficheiro. <br>
+Logo é necessário ler da FAT: o índice dos 2º, 3º, 4º e 5º blocos (sequencialmente); ou seja, 4 leituras da FAT.*</p>
+
+<hr>
+
+<p><strong>Ex. 6 Como compara, em termos de rapidez, o acesso (em leitura ou escrita) ao byte 5000 de um ficheiro que está guardado no EXT (Linux) e na FAT? Justifique a sua resposta.</strong></p>
+
+<p><em>No EXT o bloco em causa (o último do ficheiro) é acedido mais rapidamente do que na FAT.</em></p>
+
+<p><em>Justificação:</em> <br>
+- <em>no EXT o bloco é acedido diretamente a partir do inode respetivo;</em> <br>
+- <em>na FAT o bloco é acedido depois de percorrer as entradas na FAT de todos os blocos anteriores (4 blocos).</em></p>
+
+<p><strong>Sugestão: Rever Secção 9.2.2 - Organização Persistente dos Sistemas de Ficheiros</strong></p>
+
+<hr>
+
+<p><strong>Ex. 7 Considere a figura seguinte que ilustra, à esquerda, o estado da tabela de ficheiros abertos, a tabela de ficheiros abertos do sistema e a tabela de inodes num determinado momento, é à direita ilustra o estado das mesmas tabelas depois do processo P1 executar uma chamada ao sistema syscall1.</strong></p>
+
+<p><img src="./Exercícios de Sistemas Operativos_files/9.7.a.png" alt="alt text" title=""></p>
+
+<p><strong>Estado da tabela de ficheiros abertos, a tabela de ficheiros abertos do sistema e a tabela de inodes num determinado momento t1.</strong></p>
+
+<p><img src="./Exercícios de Sistemas Operativos_files/9.7.b.png" alt="alt text" title=""></p>
+
+<p><strong>Estado da tabela de ficheiros abertos, a tabela de ficheiros abertos do sistema e a tabela de inodes num determinado t2 &gt; t1.</strong></p>
+
+<p><strong>a) Digal qual foi a chamada sistema correspondente a syscal1 e quais os valores dos argumentos (aqueles que a figura acima lhe permite conhecer).</strong></p>
+
+<p><em>open(“D”, O_RDWR);</em></p>
+
+<p><strong>b) Considere que a partir do estado anterior, o processo P1 faz fork criando o processo P2. Complete a figura para representar o estado das tabelas após o fork.</strong></p>
+
+<p><em>Tabela do processo P2 é igual à do processo P1 apontando assim para as mesmas entradas da tabela de ficheiros abertos do sistema.</em></p>
+
+<p><strong>c) Considere que a partir do estado anterior, o processo P2 faz exec. Complete a figura para representar o estado das tabelas após o exec.</strong></p>
+
+<p><em>Nada se altera.</em></p>
+
+<p><strong>Sugestão: Rever Secção 9.3.2.1 - Estruturas Persistentes</strong></p>
+
+
+<a name="cap10"></a>
+<h2 id="capítulo-10-comunicação-entre-processos">Capítulo 10  - Comunicação Entre Processos</h2>
+
+<p><strong>Ex. 1 Considere as duas implementações de mecanismos de comunicação entre processos: memória partilhada, objeto de comunicação do sistema.</strong></p>
+
+<p><strong>a) Compare-as tendo em conta a complexidade da programação da sincronização. Justifique sucintamente.</strong></p>
+
+<p><em>A comunicação através de memória partilhada requer  uma implementação mais complexa pois implica uma sincronização explícita por parte do programador. Isso não acontece com a utilização de objetos de comunicação, pois a sincronização é implicitamente tratada pelo núcleo.</em></p>
+
+<p><strong>b) Compare-as em termos de eficiência. Justifique sucintamente.</strong></p>
+
+<p><em>A comunicação via objeto de sistema é menos eficiente pois requer a cópia da mensagem pelo menos duas vezes; uma entre a memória do emissor  e o buffer mantido no núcleo, e outra entre o buffer do núcleo e a memória do receptor. Utilizando memória partilhada é possível evitar cópia para o buffer no núcleo,  resultando num envio mais eficiente.</em></p>
+
+<p><strong>Sugestão: Rever Secção 10.1.4 - Implementação do Canal de Comunicação</strong></p>
+
+<p><strong>Ex. 2 No Linux existem mecanismos de comunicação entre processos que são identificados pelos programadores por nomes/endereços pertencentes a diferentes espaços de nomes. Dê exemplos. </strong></p>
+
+<p><em>1. Pipes com nome e sockets Unix: nome de ficheiro identifica o pipe.</em> <br>
+<em>2. Sockets Internet: endereço IP e porto.</em> <br>
+<em>(entre outros)</em></p>
+
+<p><strong>Sugestão: Rever Secção 10.3 - Comunicação entre Processos em Linux</strong></p>
+
+<p><strong>Ex. 3 Considere o seguinte comando shell do Unix resultante do encadeamento de comandos elementares:</strong></p>
+
+<pre><code>ls -l | sort &gt; saida
+</code></pre>
+
+<p><strong>a) Descreva o resultado do comando;</strong></p>
+
+<p><em>O comando (ls seguido de sort) começa por listar os ficheiros da diretoria atual (primeiro processo, comando ls); o texto dessa listagem é, por sua vez, ordenado (segundo processo, comando sort); e finalmente escrito no ficheiro ‘saida’.</em></p>
+
+<p><strong>b) Explique que mecanismos possibilitam este encadeamento de comandos;</strong></p>
+
+<p><em>Dois mecanismos principais são usados neste tipo de composições de comandos: pipes e redirecionamento de saídas. Neste caso concreto, existe um pipe sem nome utilizado para estabelecer a comunicação entre o processo que executa o comando de listagem ‘ls’ e o processo que executa o comando de ordenação ‘sort’. Usando um pipe, o output do primeiro é usado como input nosegundo. O segundo mecanismo é usado em três momentos: i) para redirecionar o output da listagem para o pipe, ii) para redirecionar o input da ordenação para o pipe, e para iii) redirecionar o output da ordenação para um ficheiro.</em></p>
+
+<p><strong>c) Descreva sucintamente os principais passos do código que a shell executa para efetuar as operações deste comando encadeado.</strong></p>
+
+<p><em>Passos principais:</em> <br>
+<em>1. Processo shell abre o ficheiro ‘saída’;</em> <br>
+<em>2. Processo shell abre um pipe sem nome;</em> <br>
+<em>3. Processo shell criar um novo processo filho</em> <br>
+<em>Em paralelo:</em> <br>
+<em>Processo filho</em> <br>
+<em>filho.1 Redireciona o seu stdout para o ficheiro</em> <br>
+<em>filho.2 Redireciona o seu stdin para ao extremidade de leitura do pipe</em> <br>
+<em>filho.3 Executa o programa ‘sort’</em> <br>
+<em>Processo original (pai):</em> <br>
+<em>pai.1 Redireciona o seu stdout para a extremidade de escrita do pipe</em> <br>
+<em>pai.2 Executa o programa ‘ls’.</em></p>
+
+<p><strong>Sugestão: Rever Secção 10.3 - Comunicação entre Processos em Linux</strong></p>
+
+<p><strong>Ex. 4 Considere as funções com os protótipos seguintes:</strong></p>
+
+<pre><code>int select(int width, fd_set *readfds, fd_set *writefds, fd_set *exceptfds, struct timeval *timeout);
+int read(int fd, void* buf, int count);
+</code></pre>
+
+<p><strong>a) Qual o significado do valor de retorno para cada uma destas funções em condições normais?</strong></p>
+
+<p><em>O select retorna o número de ficheiros que, entre o conjunto de ficheiros indicado nos bitmaps passados como argumentos, estão prontos (segundo cada classe de operações – ler, escrever ou excepções). O read retorna o número de bytes lidos.</em></p>
+
+<p><strong>b) Pode ocorrer que estas funções retornem prematuramente sem que todos os acontecimentos esperados tenham sido assinalados, ou sem que todos os dados disponíveis tenham sido efetivamente recebidos.</strong></p>
+
+<p><strong>i) Identifique as ocorrências em que este retorno prematuro tem lugar;</strong></p>
+
+<p><em>No caso do select, duas situações podem ocorrer, um signal ser recebido ou o timeout ter sido alcançado. No caso do read, pode ter sido recebido um signal.</em></p>
+
+<p><strong>ii) Identifique de que formas isso se reflete nos valores retornados ou modificados pelas funções e no    comportamento assumido por estas.</strong></p>
+
+<p><em>Situação em que select ou read são interrompidos por signal, função retorna erro (-1). Situação em que select expira timeout: retorna 0.</em></p>
+
+<p><strong>Sugestão: Rever Secção 10.3.2.7- Sincronização e Espera Alternativa</strong></p>
+
+<p><strong>Ex. 5 Explicite as diferenças entre pipes e fifos (também denominados pipes com nome) em Linux. Descreva, para cada um dos tipos de comunicação, qual o seu âmbito de utilização.</strong></p>
+
+<p><em>Pipes sem nome: comunicação entre processos pai e filho.</em> <br>
+<em>Pipes com nome (fifo): comunicação entre quaisquer processos na mesma máquina.</em></p>
+
+<p><strong>Sugestão: Rever Secção 10.3 - Comunicação entre Processos em Linux</strong></p>
+
+<p><strong>Ex. 6 Considere o ciclo principal de um servidor que faz apenas o eco das mensagens que lhe chegam de clientes. Os clientes podem interagir com o servidor quer com ligações stream TCP quer com datagramas UDP.</strong></p>
+
+<pre><code>for(;;) {
+   mask = testmask;
+   select(MAXSOCKS,&amp;mask,0,0,0);
+   if(FD_ISSET(strmfd,&amp;mask)) {
+      clilen = sizeof (cliaddr);
+      newfd = accept(strmfd,(struct sockaddr*)&amp;cliaddr, &amp;clilen);
+      handleClient(newfd);  //Auxiliary function that creates a new process to exchange messages with the client
+      close(newfd);
+   }
+   if(FD_ISSET(dgrmfd,&amp;mask)) echo(dgrmfd);
+}
+</code></pre>
+
+<p><strong>a. Qual a primeira linha em que o servidor se bloqueia?</strong></p>
+
+<p><em>Na linha 3 (espera no select).</em></p>
+
+<p><strong>b. Explique o funcionamento da variável mask indicando o valor deve ter na linha 3 antes da invocação do select e que valor ou valores terá quando for testada na linha 4.</strong></p>
+
+<p><em>A variável mask é um vetor de bits. Na linha 3, os bits no vetor correspondentes aos descritores strmfd e dgrmfd devem estar com valor 1; todos os restantes bits do vetor devem estar a 0. Quando for testada na linha 4, tanto o bits correspondentes a strmfd e a dgrmfd podem ter qualquer combinação de valores (consoante strmfd e dgrmfd estejam ou não prontos para ler).</em></p>
+
+<p><strong>c. Quantos sockets devem ter sido criados antes do servidor executar esta secção de código? Para que são usados?</strong></p>
+
+<p><em>Foram criados 2 sockets; um socket stream e um socket datagram. O socket stream é usado para aceitar ligações e receber mensa. O socket UDP é usado para receber mensagens.</em></p>
+
+<p><strong>d. É criado mais algum socket (além dos que indicou na resposta anterior) na sequência acima? Se sim, para que será usado?</strong></p>
+
+<p><em>É criado mais um socket na sequência da execução da função accept que, quando retorna, retorna o valor do descritor de um novo sokect TCP. O novo socket é usado para comunicar com o cliente.</em></p>
+
+<p><strong>e. Se a chamada sistema da linha 8 não existisse o que poderia suceder? Justifique.</strong></p>
+
+<p><em>O socket newfd não é usado depois desta linha; se não for fechado fica a ocupar uma entrada na lista de descritores do processo em causa.</em></p>
+
+    <p><strong>Sugestão: Rever Secção 10.3 - Comunicação entre Processos em Linux</strong></p>
+
+
+<a name="mp"></a>
+<h2 id="programacao-troca-mensagens">Extra livro  - Programação Concorrente por Troca de Mensagens</h2>
+
+    <p><strong>Ex. 1 Considere um sistema com um número par de tarefas organizadas num anel, em que cada tarefa conhece o seu antecessor e o seu sucessor. Assuma que, num determinado momento, todas as tarefas têm de enviar uma mensagem ao seu sucessor (e receber uma mensagem do seu antecessor) e que o canal funciona em modo "rendez-vous", ou seja, o emissor fica bloqueado no "enviarMensagem" até que o receptor chame "receberMensagem".
+    </strong></p><strong>
+    <p>
+	Considere o seguinte código, feito pelo André, que é executado por todas as tarefas:
+    </p>
+
+    <p>
+      </p><pre><code>
+	...
+	enviarMensagem (myid, proximo, send_buff, strlen(send_buff)+1);
+	receberMensagem (anterior, myid, receive_buff, BUFFSZ);
+	....
+	</code></pre>
+    <p></p>
+    <p>
+      Neste caso, o sistema entra em inter-bloqueio. Todos os threads chamam "enviarMensagem" antes de chamar "receberMensagem", pelo que todos ficam bloqueados.</p>
+    <p>	A Beatriz e a Cristina arranjaram duas maneiras diferentes de resolver este problema, como se ilustra de seguida.</p>
+    <p>
+      </p><pre><code>
+	// Código da Beatriz
+	...
+	if (myid == 0) {
+	enviarMensagem (myid, proximo, send_buff, strlen(send_buff)+1);
+	receberMensagem (anterior, myid, receive_buff, BUFFSZ);
+	}
+	else {
+	receberMensagem (anterior, myid, receive_buff, BUFFSZ);
+	enviarMensagem (myid, proximo, send_buff, strlen(send_buff)+1);
+	}
+	...
+	</code></pre>
+
+    <p></p><p>
+
+      </p><pre><code>
+	// Código da Cristina
+
+	...
+	if (myid % 2) {
+	enviarMensagem (myid, proximo, send_buff, strlen(send_buff)+1);
+	receberMensagem (anterior, myid, receive_buff, BUFFSZ);
+	}
+	else {
+	receberMensagem (anterior, myid, receive_buff, BUFFSZ);
+	enviarMensagem (myid, proximo, send_buff, strlen(send_buff)+1);
+	}
+	...
+	</code></pre>
+	<p></p>
+
+</strong><p><strong>Qual destas soluções é a mais eficiente, isto é, qual permite completar a troca de mensagens entre todos os threads em menos tempo?
+	</strong></p>
+
+
+<p><em>
+    Considere o seguinte exemplo, que ilustra a execução de ambas as soluções com 4 tarefas.
+
+    O código da Beatriz vai executar-se da seguinte maneira:
+
+</em></p><table>
+<thead>
+<tr>
+  <th></th>
+  <th>T0</th>
+  <th>T1</th>
+  <th>T2</th>
+  <th>T3</th>
+</tr>
+</thead>
+<tbody>
+  <tr>
+  <td>Instante 0:</td>
+  <td>enviarMensagem (0, 1)</td><td>receberMensagem (0, 1)</td><td>receberMensagem (1,2)</td><td>receberMensagem (2, 3)
+  </td>
+  </tr>
+
+    <tr>
+      <td>Instante 1:</td>
+      <td>receberMensagem (3,0)</td><td>enviarMensagem (1,2)</td><td>(vai receber)</td><td>(em espera)</td>
+    </tr>
+
+  <tr>
+    <td>Instante 2:</td>
+    <td>(em espera)</td><td>concluído</td><td>enviarMensagem (2,3)</td><td>(vai receber)</td>
+  </tr>
+  <tr>
+    <td>Instante 3:</td>
+    <td>(vai receber)</td><td>concluído</td><td>concluído</td><td>enviarMensagem (3,0)</td>
+  </tr>
+  <tr>
+    <td>Instante 4:</td>
+    <td>concluído</td><td>concluído</td><td>concluído</td><td>concluído</td>
+  </tr>
+	
+</tbody>
+</table><em>
+
+O código da Cristina vai executar-se da seguinte maneira:
+
+<table>
+<thead>
+<tr>
+  <th></th>
+  <th>T0</th>
+  <th>T1</th>
+  <th>T2</th>
+  <th>T3</th>
+</tr>
+</thead>
+<tbody>
+  <tr>
+  <td>Instante 0:</td>
+  <td>enviarMensagem (0, 1)</td><td>receberMensagem (0, 1)</td><td>enviarMensagem (2,3)</td><td>receberMensagem (2, 3)
+    </td>
+  </tr>
+
+    <tr>
+      <td>Instante 1:</td>
+      <td>receberMensagem (3,0)</td><td>enviarMensagem (1,2)</td><td>receberMensagem (1,2)</td><td>enviarMensagem (0,3)</td>
+    </tr>
+
+  <tr>
+    <td>Instante 2:</td>
+    <td>concluído</td><td>concluído</td><td>concluído</td><td>concluído</td>
+  </tr>
+	
+</tbody>
+</table>
+
+Ou seja, o código da Cristina é mais eficiente, pois enquanto a T0
+está a enviar para T1, em paralelo, a T2 está a enviar para T3 (e
+depois trocam). Isto permite trocar todas as mensagens em apenas dois ciclos,
+para qualquer número de tarefas.  No código da Beatriz, T1 tem de
+enviar para T2 antes de T2 poder enviar para T3 e assim
+sucessivamente. Ou seja, as transferências acabam por ser executadas
+sequencialmente, perdendo-se paralelismo.
+
+</em><p></p>
+
+</div>
+
+</body></html>
